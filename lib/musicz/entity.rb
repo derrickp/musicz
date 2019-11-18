@@ -6,5 +6,15 @@ module Musicz
     transform_keys do |key|
       key.to_s.gsub('-', '_').to_sym
     end
+
+    transform_types do |type|
+      if type.default?
+        type.constructor do |value|
+          value.nil? ? Dry::Types::Undefined : value
+        end
+      else
+        type
+      end
+    end
   end
 end
