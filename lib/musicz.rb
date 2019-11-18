@@ -1,4 +1,6 @@
-require "musicz/version"
+# frozen_string_literal: true
+
+require 'musicz/version'
 
 module Musicz
   class Error < StandardError; end
