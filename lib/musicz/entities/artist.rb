@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'musicz/entity'
 require 'musicz/entities/alias'
 require 'musicz/entities/life_span'
