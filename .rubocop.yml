@@ -1,2 +1,14 @@
 Layout/DotPosition:
   EnforcedStyle: trailing
+
+Metrics/LineLength:
+  Exclude:
+    - 'spec/**/*'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - 'spec/**/*'
