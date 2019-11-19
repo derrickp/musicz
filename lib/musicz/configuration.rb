@@ -26,17 +26,19 @@ module Musicz
   end
 
   def self.clear
-    @@config = nil
+    @config = nil
   end
 
   def self.config
-    @@config
+    @config
   end
 
   def self.configure
     raise Configuration::NoConfigBlockGiven unless block_given?
 
-    yield @@config ||= Configuration.new
-    raise Configuration::InvalidConfiguration, @@config.errors unless @@config.valid?
+    yield @config ||= Configuration.new
+    return if @config.valid?
+
+    raise Configuration::InvalidConfiguration, @config.errors
   end
 end
