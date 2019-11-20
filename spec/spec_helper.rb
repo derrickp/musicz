@@ -4,6 +4,7 @@ require 'simplecov'
 SimpleCov.start
 
 require 'bundler/setup'
+require 'pry'
 require 'musicz'
 
 RSpec.configure do |config|
