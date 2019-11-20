@@ -5,7 +5,7 @@ module Musicz
     class NoConfigBlockGiven < RuntimeError; end
     class InvalidConfiguration < RuntimeError; end
 
-    DEFAULT_BASE_URI = 'https://musicbrainz.org/ws/2/'
+    DEFAULT_BASE_URI = 'https://musicbrainz.org/ws/2'
     attr_accessor :base_uri, :app_name, :contact
 
     def initialize(base_uri: DEFAULT_BASE_URI)
