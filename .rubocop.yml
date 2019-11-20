@@ -15,3 +15,8 @@ Style/FrozenStringLiteralComment:
 
 Style/Documentation:
   Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - musicz.gemspec
+    - 'spec/**/*'
