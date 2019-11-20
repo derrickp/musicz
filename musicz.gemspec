@@ -33,6 +33,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'dry-struct'
   spec.add_dependency 'dry-types'
+  spec.add_dependency 'typhoeus'
 
   spec.add_development_dependency 'bundler', '~> 2.0'
   spec.add_development_dependency 'pry'
