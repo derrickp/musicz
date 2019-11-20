@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://musicbrainz.org/ws/2/artist/fmt=json&query=Slipknot
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Musicz Tests github.com/derrickp/musicz
+      Expect:
+      - ''
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 20 Nov 2019 15:10:03 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=15
+      X-RateLimit-Limit:
+      - '1200'
+      X-RateLimit-Remaining:
+      - '704'
+      X-RateLimit-Reset:
+      - '1574262604'
+      Server:
+      - Plack::Handler::Starlet
+      ETag:
+      - '"63c3d270d06fff0ce5b8920589c65dc1"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <error><text>Invalid mbid.</text><text>For usage, please see: https://musicbrainz.org/development/mmd</text></error>
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://musicbrainz.org/ws/2/artist/fmt=json&query=Slipknot
+  recorded_at: Wed, 20 Nov 2019 15:10:02 GMT
+- request:
+    method: get
+    uri: https://musicbrainz.org/ws/2/artist?fmt=json&query=Slipknot
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Musicz Tests github.com/derrickp/musicz
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Nov 2019 15:13:54 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '6300'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=15
+      Vary:
+      - Accept-Encoding
+      X-RateLimit-Limit:
+      - '1200'
+      X-RateLimit-Remaining:
+      - '713'
+      X-RateLimit-Reset:
+      - '1574262834'
+      Last-Modified:
+      - Wed, 20 Nov 2019 15:09:56 GMT
+      ETag:
+      - '"NzViMjE4MDAwMDAwMDAwMFNvbHI="'
+      X-Cache-Status:
+      - MISS
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjcmVhdGVkIjoiMjAxOS0xMS0yMFQxNToxMzo1NC42MTFaIiwiY291bnQiOjksIm9mZnNldCI6MCwiYXJ0aXN0cyI6W3siaWQiOiJhNDY2YzJhMi02NTE3LTQyZmItYTE2MC0xMDg3YzNiYWZkOWYiLCJ0eXBlIjoiR3JvdXAiLCJ0eXBlLWlkIjoiZTQzMWY1ZjYtYjVkMi0zNDNkLThiMzYtNzI2MDdmZmZiNzRiIiwic2NvcmUiOjEwMCwibmFtZSI6IlNsaXBrbm90Iiwic29ydC1uYW1lIjoiU2xpcGtub3QiLCJjb3VudHJ5IjoiVVMiLCJhcmVhIjp7ImlkIjoiNDg5Y2U5MWItNjY1OC0zMzA3LTk4NzctNzk1YjY4NTU0Yzk4IiwidHlwZSI6IkNvdW50cnkiLCJ0eXBlLWlkIjoiMDZkZDBhZTQtOGM3NC0zMGJiLWI0M2QtOTVkY2VkZjk2MWRlIiwibmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJzb3J0LW5hbWUiOiJVbml0ZWQgU3RhdGVzIiwibGlmZS1zcGFuIjp7ImVuZGVkIjpudWxsfX0sImJlZ2luLWFyZWEiOnsiaWQiOiIyYmRhMTY0Ny1mNjRiLTQyNzctYWNjZS1lOWMxMjk2ZDA2NWUiLCJ0eXBlIjoiQ2l0eSIsInR5cGUtaWQiOiI2ZmQ4ZjI5YS0zZDBhLTMyZmMtOTgwZC1lYTY5N2I2OWRhNzgiLCJuYW1lIjoiRGVzIE1vaW5lcyIsInNvcnQtbmFtZSI6IkRlcyBNb2luZXMiLCJsaWZlLXNwYW4iOnsiZW5kZWQiOm51bGx9fSwiZGlzYW1iaWd1YXRpb24iOiJVUyBtZXRhbCBiYW5kIiwiaXNuaXMiOlsiMDAwMDAwMDExNTQ4MTcyMiJdLCJsaWZlLXNwYW4iOnsiYmVnaW4iOiIxOTk1IiwiZW5kZWQiOm51bGx9LCJ0YWdzIjpbeyJjb3VudCI6MiwibmFtZSI6ImhlYXZ5IG1ldGFsIn0seyJjb3VudCI6MSwibmFtZSI6Im1ldGFsIn0seyJjb3VudCI6NCwibmFtZSI6Im51IG1ldGFsIn0seyJjb3VudCI6LTEsIm5hbWUiOiJuZXcgbWV0YWwifSx7ImNvdW50IjozLCJuYW1lIjoiYWx0ZXJuYXRpdmUgbWV0YWwifSx7ImNvdW50IjotMSwibmFtZSI6InJhcCBtZXRhbCJ9LHsiY291bnQiOjIsIm5hbWUiOiJncm9vdmUgbWV0YWwifSx7ImNvdW50IjowLCJuYW1lIjoicm9jayBhbmQgaW5kaWUifV19LHsiaWQiOiJjZWI3YjZiZS0xZGJiLTRkODAtYjE1Ny01NTg4YmM4ODQ3NjQiLCJ0eXBlIjoiR3JvdXAiLCJ0eXBlLWlkIjoiZTQzMWY1ZjYtYjVkMi0zNDNkLThiMzYtNzI2MDdmZmZiNzRiIiwic2NvcmUiOjg4LCJuYW1lIjoiU2xpcGtub3QiLCJzb3J0LW5hbWUiOiJTbGlwa25vdCIsImNvdW50cnkiOiJVUyIsImFyZWEiOnsiaWQiOiI0ODljZTkxYi02NjU4LTMzMDctOTg3Ny03OTViNjg1NTRjOTgiLCJ0eXBlIjoiQ291bnRyeSIsInR5cGUtaWQiOiIwNmRkMGFlNC04Yzc0LTMwYmItYjQzZC05NWRjZWRmOTYxZGUiLCJuYW1lIjoiVW5pdGVkIFN0YXRlcyIsInNvcnQtbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJsaWZlLXNwYW4iOnsiZW5kZWQiOm51bGx9fSwiZGlzYW1iaWd1YXRpb24iOiJMYXRlLTgwJ3MgcHVuayBiYW5kIiwibGlmZS1zcGFuIjp7ImVuZGVkIjpudWxsfSwidGFncyI6W3siY291bnQiOjEsIm5hbWUiOiJjb25uZWN0aWN1dCJ9LHsiY291bnQiOjEsIm5hbWUiOiJ1c2EifSx7ImNvdW50IjoxLCJuYW1lIjoicHVuayJ9LHsiY291bnQiOjEsIm5hbWUiOiJuZXcgaGF2ZW4ifV19LHsiaWQiOiIxYTdhMzUwNi03Zjg3LTQ4ZTctODJkMS01ZjZlMDAxNTg3ZmIiLCJ0eXBlIjoiR3JvdXAiLCJ0eXBlLWlkIjoiZTQzMWY1ZjYtYjVkMi0zNDNkLThiMzYtNzI2MDdmZmZiNzRiIiwic2NvcmUiOjY2LCJuYW1lIjoiU2xpcGtub3TmnYnkuKYiLCJzb3J0LW5hbWUiOiJTbGlwa25vdCBTdWdpbmFtaSIsImNvdW50cnkiOiJKUCIsImFyZWEiOnsiaWQiOiIyZGI0MjgzNy1jODMyLTNjMjctYjRhMy0wODE5OGY3NTY5M2MiLCJ0eXBlIjoiQ291bnRyeSIsInR5cGUtaWQiOiIwNmRkMGFlNC04Yzc0LTMwYmItYjQzZC05NWRjZWRmOTYxZGUiLCJuYW1lIjoiSmFwYW4iLCJzb3J0LW5hbWUiOiJKYXBhbiIsImxpZmUtc3BhbiI6eyJlbmRlZCI6bnVsbH19LCJkaXNhbWJpZ3VhdGlvbiI6IlNsaXBrbm90IFRyaWJ1dGUgQmFuZCIsImxpZmUtc3BhbiI6eyJiZWdpbiI6IjIwMTYiLCJlbmRlZCI6bnVsbH0sImFsaWFzZXMiOlt7InNvcnQtbmFtZSI6IlNsaXBrbm90IFN1Z2luYW1pIiwidHlwZS1pZCI6Ijg5NGFmYmE2LTI4MTYtM2MyNC04MDcyLWVhZGI2NmJkMDRiYyIsIm5hbWUiOiJTbGlwa25vdCBTdWdpbmFtaSIsImxvY2FsZSI6ImVuIiwidHlwZSI6IkFydGlzdCBuYW1lIiwicHJpbWFyeSI6dHJ1ZSwiYmVnaW4tZGF0ZSI6bnVsbCwiZW5kLWRhdGUiOm51bGx9XX0seyJpZCI6IjVjZDVjYWJmLTFjMmMtNDZjZi1iOGU2LTgzYzdhYmIwMzdjMCIsInR5cGUiOiJHcm91cCIsInR5cGUtaWQiOiJlNDMxZjVmNi1iNWQyLTM0M2QtOGIzNi03MjYwN2ZmZmI3NGIiLCJzY29yZSI6NjQsIm5hbWUiOiJTbGlwa25vdCBUcmlidXRlIEJhbmQiLCJzb3J0LW5hbWUiOiJTbGlwa25vdCBUcmlidXRlIEJhbmQiLCJsaWZlLXNwYW4iOnsiZW5kZWQiOm51bGx9fSx7ImlkIjoiNmVlY2Q1OTYtNGQ0My00MGUwLWFiZGEtODhhNGRlMTJlNzBlIiwidHlwZSI6Ikdyb3VwIiwidHlwZS1pZCI6ImU0MzFmNWY2LWI1ZDItMzQzZC04YjM2LTcyNjA3ZmZmYjc0YiIsInNjb3JlIjo2MywibmFtZSI6IlNsaXAtTm90IFRyaWJ1dGUiLCJzb3J0LW5hbWUiOiJTbGlwa25vdCBUcmlidXRlIiwiYXJlYSI6eyJpZCI6IjA1ZjY4YjRjLTEwZjMtNDliNS1iMjhjLTI2MGExYjcwNzA0MyIsInR5cGUiOiJTdWJkaXZpc2lvbiIsInR5cGUtaWQiOiJmZDNkNDRjNS04MGExLTM4NDItOTc0NS0yYzQ5NzJkMzVhZmEiLCJuYW1lIjoiTWFzc2FjaHVzZXR0cyIsInNvcnQtbmFtZSI6Ik1hc3NhY2h1c2V0dHMiLCJsaWZlLXNwYW4iOnsiZW5kZWQiOm51bGx9fSwibGlmZS1zcGFuIjp7ImJlZ2luIjoiMjAwNi0wNi0wNiIsImVuZGVkIjpudWxsfX0seyJpZCI6IjYxOWNiY2U1LTdiZmEtNGY0Ni1iMmFhLTZhMTljMWU5NmQ1MCIsInR5cGUiOiJQZXJzb24iLCJ0eXBlLWlkIjoiYjZlMDM1ZjQtM2NlOS0zMzFjLTk3ZGYtODMzOTcyMzBiMGRmIiwic2NvcmUiOjQzLCJuYW1lIjoiUGF1bCBHcmF5Iiwic29ydC1uYW1lIjoiR3JheSwgUGF1bCIsImdlbmRlciI6Im1hbGUiLCJjb3VudHJ5IjoiVVMiLCJhcmVhIjp7ImlkIjoiNDg5Y2U5MWItNjY1OC0zMzA3LTk4NzctNzk1YjY4NTU0Yzk4IiwidHlwZSI6IkNvdW50cnkiLCJ0eXBlLWlkIjoiMDZkZDBhZTQtOGM3NC0zMGJiLWI0M2QtOTVkY2VkZjk2MWRlIiwibmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJzb3J0LW5hbWUiOiJVbml0ZWQgU3RhdGVzIiwibGlmZS1zcGFuIjp7ImVuZGVkIjpudWxsfX0sImJlZ2luLWFyZWEiOnsiaWQiOiIxZjQwYzZlMS00N2JhLTRlMzUtOTk2Zi1mZTZlZTU4NDBlNjIiLCJ0eXBlIjoiQ2l0eSIsInR5cGUtaWQiOiI2ZmQ4ZjI5YS0zZDBhLTMyZmMtOTgwZC1lYTY5N2I2OWRhNzgiLCJuYW1lIjoiTG9zIEFuZ2VsZXMiLCJzb3J0LW5hbWUiOiJMb3MgQW5nZWxlcyIsImxpZmUtc3BhbiI6eyJlbmRlZCI6bnVsbH19LCJlbmQtYXJlYSI6eyJpZCI6ImM0MTM0NTc1LTZmMzYtNDVlMS05OTI2LTM4NGVhZmI0OWU4YiIsInR5cGUiOiJDaXR5IiwidHlwZS1pZCI6IjZmZDhmMjlhLTNkMGEtMzJmYy05ODBkLWVhNjk3YjY5ZGE3OCIsIm5hbWUiOiJKb2huc3RvbiIsInNvcnQtbmFtZSI6IkpvaG5zdG9uIiwibGlmZS1zcGFuIjp7ImVuZGVkIjpudWxsfX0sImRpc2FtYmlndWF0aW9uIjoiU2xpcGtub3QgYmFzc2lzdCIsImxpZmUtc3BhbiI6eyJiZWdpbiI6IjE5NzItMDQtMDgiLCJlbmQiOiIyMDEwLTA1LTI0IiwiZW5kZWQiOnRydWV9LCJhbGlhc2VzIjpbeyJzb3J0LW5hbWUiOiJHcmF5LCBQYXVsIEQuIiwidHlwZS1pZCI6Ijg5NGFmYmE2LTI4MTYtM2MyNC04MDcyLWVhZGI2NmJkMDRiYyIsIm5hbWUiOiJQYXVsIEQuIEdyYXkiLCJsb2NhbGUiOm51bGwsInR5cGUiOiJBcnRpc3QgbmFtZSIsInByaW1hcnkiOm51bGwsImJlZ2luLWRhdGUiOm51bGwsImVuZC1kYXRlIjpudWxsfSx7InNvcnQtbmFtZSI6IkdyYXksIFBhdWwgRGVkcmljayIsInR5cGUtaWQiOiJkNGRjZDBjMC1iMzQxLTM2MTItYTMzMi1jMGNlNzk3YjI1Y2YiLCJuYW1lIjoiUGF1bCBEZWRyaWNrIEdyYXkiLCJsb2NhbGUiOm51bGwsInR5cGUiOiJMZWdhbCBuYW1lIiwicHJpbWFyeSI6bnVsbCwiYmVnaW4tZGF0ZSI6bnVsbCwiZW5kLWRhdGUiOm51bGx9XX0seyJpZCI6IjNlM2YxYTI3LTkzOTAtNGM1My04MTlkLTVhNDUwMTE2NWYzOCIsInR5cGUiOiJQZXJzb24iLCJ0eXBlLWlkIjoiYjZlMDM1ZjQtM2NlOS0zMzFjLTk3ZGYtODMzOTcyMzBiMGRmIiwic2NvcmUiOjQzLCJuYW1lIjoiQ3JhaWcgSm9uZXMiLCJzb3J0LW5hbWUiOiJKb25lcywgQ3JhaWciLCJnZW5kZXIiOiJtYWxlIiwiY291bnRyeSI6IlVTIiwiYXJlYSI6eyJpZCI6IjQ4OWNlOTFiLTY2NTgtMzMwNy05ODc3LTc5NWI2ODU1NGM5OCIsInR5cGUiOiJDb3VudHJ5IiwidHlwZS1pZCI6IjA2ZGQwYWU0LThjNzQtMzBiYi1iNDNkLTk1ZGNlZGY5NjFkZSIsIm5hbWUiOiJVbml0ZWQgU3RhdGVzIiwic29ydC1uYW1lIjoiVW5pdGVkIFN0YXRlcyIsImxpZmUtc3BhbiI6eyJlbmRlZCI6bnVsbH19LCJiZWdpbi1hcmVhIjp7ImlkIjoiMmJkYTE2NDctZjY0Yi00Mjc3LWFjY2UtZTljMTI5NmQwNjVlIiwidHlwZSI6IkNpdHkiLCJ0eXBlLWlkIjoiNmZkOGYyOWEtM2QwYS0zMmZjLTk4MGQtZWE2OTdiNjlkYTc4IiwibmFtZSI6IkRlcyBNb2luZXMiLCJzb3J0LW5hbWUiOiJEZXMgTW9pbmVzIiwibGlmZS1zcGFuIjp7ImVuZGVkIjpudWxsfX0sImRpc2FtYmlndWF0aW9uIjoiU2xpcGtub3Qgc2FtcGxlciIsImxpZmUtc3BhbiI6eyJiZWdpbiI6IjE5NzItMDItMTEiLCJlbmRlZCI6bnVsbH0sImFsaWFzZXMiOlt7InNvcnQtbmFtZSI6IkpvbmVzLCBDcmFpZyBBLiIsInR5cGUtaWQiOiI4OTRhZmJhNi0yODE2LTNjMjQtODA3Mi1lYWRiNjZiZDA0YmMiLCJuYW1lIjoiQ3JhaWcgQS4gSm9uZXMiLCJsb2NhbGUiOm51bGwsInR5cGUiOiJBcnRpc3QgbmFtZSIsInByaW1hcnkiOm51bGwsImJlZ2luLWRhdGUiOm51bGwsImVuZC1kYXRlIjpudWxsfSx7InNvcnQtbmFtZSI6IkpvbmVzLCBDcmFpZyBNaWNoYWVsIiwidHlwZS1pZCI6Ijg5NGFmYmE2LTI4MTYtM2MyNC04MDcyLWVhZGI2NmJkMDRiYyIsIm5hbWUiOiJDcmFpZyBNaWNoYWVsIEpvbmVzIiwibG9jYWxlIjpudWxsLCJ0eXBlIjoiQXJ0aXN0IG5hbWUiLCJwcmltYXJ5IjpudWxsLCJiZWdpbi1kYXRlIjpudWxsLCJlbmQtZGF0ZSI6bnVsbH0seyJzb3J0LW5hbWUiOiJDcmFpZyAnMTMzJyBKb25lcyIsIm5hbWUiOiJDcmFpZyAnMTMzJyBKb25lcyIsImxvY2FsZSI6bnVsbCwidHlwZSI6bnVsbCwicHJpbWFyeSI6bnVsbCwiYmVnaW4tZGF0ZSI6bnVsbCwiZW5kLWRhdGUiOm51bGx9LHsic29ydC1uYW1lIjoiQ3JhaWcgXCIxMzNcIiBKb25lcyIsIm5hbWUiOiJDcmFpZyBcIjEzM1wiIEpvbmVzIiwibG9jYWxlIjpudWxsLCJ0eXBlIjpudWxsLCJwcmltYXJ5IjpudWxsLCJiZWdpbi1kYXRlIjpudWxsLCJlbmQtZGF0ZSI6bnVsbH0seyJzb3J0LW5hbWUiOiIxMzMiLCJuYW1lIjoiMTMzIiwibG9jYWxlIjpudWxsLCJ0eXBlIjpudWxsLCJwcmltYXJ5IjpudWxsLCJiZWdpbi1kYXRlIjpudWxsLCJlbmQtZGF0ZSI6bnVsbH1dfSx7ImlkIjoiZjVkN2QyMDEtNDE2NS00ZmM2LWE0NjktMzIwNWU5ZTQ0OTk5IiwidHlwZSI6Ikdyb3VwIiwidHlwZS1pZCI6ImU0MzFmNWY2LWI1ZDItMzQzZC04YjM2LTcyNjA3ZmZmYjc0YiIsInNjb3JlIjozOSwibmFtZSI6IlNsaXBrbm93dCIsInNvcnQtbmFtZSI6IlNsaXBrbm93dCIsImRpc2FtYmlndWF0aW9uIjoiU2xpcGtub3QgdHJpYnV0ZSBiYW5kIiwibGlmZS1zcGFuIjp7ImVuZGVkIjpudWxsfX0seyJpZCI6ImZjMTJmMjM4LTkzOGMtNGJiMC04YzAyLTEyY2U1YmNiNGE3MSIsInR5cGUiOiJHcm91cCIsInR5cGUtaWQiOiJlNDMxZjVmNi1iNWQyLTM0M2QtOGIzNi03MjYwN2ZmZmI3NGIiLCJzY29yZSI6MzcsIm5hbWUiOiJTdWJsaW1pbmFsIFZlcnNlcyIsInNvcnQtbmFtZSI6IlN1YmxpbWluYWwgVmVyc2VzIiwiY291bnRyeSI6IklUIiwiYXJlYSI6eyJpZCI6ImM2NTAwMjc3LTlhM2QtMzQ5Yi1iZjMwLTQxYWZkYmY0MmFkZCIsInR5cGUiOiJDb3VudHJ5IiwidHlwZS1pZCI6IjA2ZGQwYWU0LThjNzQtMzBiYi1iNDNkLTk1ZGNlZGY5NjFkZSIsIm5hbWUiOiJJdGFseSIsInNvcnQtbmFtZSI6Ikl0YWx5IiwibGlmZS1zcGFuIjp7ImVuZGVkIjpudWxsfX0sImRpc2FtYmlndWF0aW9uIjoiSXRhbGlhbiBTbGlwa25vdCB0cmlidXRlIGJhbmQiLCJsaWZlLXNwYW4iOnsiZW5kZWQiOm51bGx9fV19
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://musicbrainz.org/ws/2/artist?fmt=json&query=Slipknot
+  recorded_at: Wed, 20 Nov 2019 15:13:53 GMT
+recorded_with: VCR 5.0.0
