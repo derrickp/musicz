@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://musicbrainz.org/ws/2/artist/ggf-6517-42fb-a160-1087c3bafd9f?fmt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Musicz https://github.com/derrickp/musicz
+      Expect:
+      - ''
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Thu, 21 Nov 2019 19:12:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '97'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=15
+      X-RateLimit-Limit:
+      - '1200'
+      X-RateLimit-Remaining:
+      - '846'
+      X-RateLimit-Reset:
+      - '1574363566'
+      Server:
+      - Plack::Handler::Starlet
+      ETag:
+      - '"326ef3f5b9aabae00194a1623cdb3810"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"help":"For usage, please see: https://musicbrainz.org/development/mmd","error":"Invalid
+        mbid."}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://musicbrainz.org/ws/2/artist/ggf-6517-42fb-a160-1087c3bafd9f?fmt=json
+  recorded_at: Thu, 21 Nov 2019 19:12:46 GMT
+recorded_with: VCR 5.0.0
