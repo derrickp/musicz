@@ -23,6 +23,13 @@ module Musicz
         arr << 'No contact' if contact.nil?
       end
     end
+
+    def self.build_default
+      new.tap do |c|
+        c.app_name = 'Musicz'
+        c.contact = 'https://github.com/derrickp/musicz'
+      end
+    end
   end
 
   def self.clear
