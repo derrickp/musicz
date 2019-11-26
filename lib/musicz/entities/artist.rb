@@ -5,6 +5,7 @@ require 'musicz/entities/alias'
 require 'musicz/entities/life_span'
 require 'musicz/entities/rating'
 require 'musicz/entities/tag'
+require 'musicz/entities/release_reference'
 
 module Musicz
   module Entities
@@ -19,6 +20,7 @@ module Musicz
       attribute :aliases, Types::Strict::Array.of(Alias).default([].freeze)
       attribute :tags, Types::Strict::Array.of(Tag).default([].freeze)
       attribute? :rating, Rating.optional
+      attribute? :releases, Types::Array.of(ReleaseReference)
     end
   end
 end
