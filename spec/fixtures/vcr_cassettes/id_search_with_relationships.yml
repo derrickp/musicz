@@ -1,0 +1,101 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://musicbrainz.org/ws/2/artist/a466c2a2-6517-42fb-a160-1087c3bafd9f?inc=releases&fmt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Musicz https://github.com/derrickp/musicz
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 28 Nov 2019 05:55:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '13773'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=15
+      Vary:
+      - Accept-Encoding
+      X-RateLimit-Limit:
+      - '1200'
+      X-RateLimit-Remaining:
+      - '827'
+      X-RateLimit-Reset:
+      - '1574920550'
+      Server:
+      - Plack::Handler::Starlet
+      ETag:
+      - '"3e023a2b67da00c2660d74c03e957e25"'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Cache-Status:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"ipis":[],"type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","begin_area":{"id":"2bda1647-f64b-4277-acce-e9c1296d065e","disambiguation":"","sort-name":"Des
+        Moines","name":"Des Moines"},"isnis":["0000000115481722"],"name":"Slipknot","id":"a466c2a2-6517-42fb-a160-1087c3bafd9f","releases":[{"status":"Official","quality":"normal","packaging-id":"ec27701a-4a22-37f4-bfac-6616e0f9750a","title":"Mate.
+        Feed. Kill. Repeat.","packaging":"Jewel Case","release-events":[{"date":"1996-10-31","area":{"name":"United
+        States","iso-3166-1-codes":["US"],"sort-name":"United States","disambiguation":"","id":"489ce91b-6658-3307-9877-795b68554c98"}}],"country":"US","id":"ce4722b7-7d58-4f7d-b76d-cb4b37fb661b","text-representation":{"language":"eng","script":"Latn"},"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","barcode":"742617000027","date":"1996-10-31","disambiguation":""},{"title":"Crowz","packaging":null,"packaging-id":null,"quality":"normal","status":"Promotion","barcode":null,"date":"1997-10-31","disambiguation":"","country":"US","id":"9e85c571-21e6-4820-babb-cd0f8c3f436c","text-representation":{"language":"eng","script":"Latn"},"status-id":"518ffc83-5cde-34df-8627-81bff5093d92","release-events":[{"area":{"name":"United
+        States","iso-3166-1-codes":["US"],"sort-name":"United States","disambiguation":"","id":"489ce91b-6658-3307-9877-795b68554c98"},"date":"1997-10-31"}]},{"barcode":null,"disambiguation":"","date":"1997","country":"US","id":"fdd43222-f2c7-478b-af44-228dc13f6a27","text-representation":{"language":"eng","script":"Latn"},"status-id":null,"release-events":[{"date":"1997","area":{"name":"United
+        States","iso-3166-1-codes":["US"],"disambiguation":"","sort-name":"United
+        States","id":"489ce91b-6658-3307-9877-795b68554c98"}}],"title":"Crowz","packaging":null,"quality":"normal","packaging-id":null,"status":null},{"release-events":[{"date":"1997","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","disambiguation":"","iso-3166-1-codes":["US"],"sort-name":"United
+        States","name":"United States"}}],"barcode":null,"date":"1997","disambiguation":"","country":"US","status-id":"4e304316-386d-3409-af2e-78857eec5cfe","id":"5a2b0906-cc87-47a6-9377-77a46b8ee0a9","text-representation":{"script":"Latn","language":"eng"},"packaging-id":null,"quality":"normal","status":"Official","packaging":null,"title":"Demo
+        Tape"},{"date":"1998","disambiguation":"","barcode":null,"id":"8cf162be-14e4-4867-af20-90cb78c58343","text-representation":{"script":"Latn","language":"eng"},"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","country":"US","release-events":[{"date":"1998","area":{"name":"United
+        States","disambiguation":"","iso-3166-1-codes":["US"],"sort-name":"United
+        States","id":"489ce91b-6658-3307-9877-795b68554c98"}}],"title":"1998 Demo
+        Tape","packaging":null,"packaging-id":null,"quality":"normal","status":"Official"},{"country":"AU","text-representation":{"script":"Latn","language":"eng"},"id":"f2210d5c-8da6-3e53-936b-1d08d58cdac0","status-id":"4e304316-386d-3409-af2e-78857eec5cfe","barcode":"016861865528","disambiguation":"original
+        pressing","date":"1999-06-29","release-events":[{"area":{"iso-3166-1-codes":["AU"],"disambiguation":"","sort-name":"Australia","id":"106e0bec-b638-3b37-b731-f53d507dc00e","name":"Australia"},"date":"1999-06-29"}],"title":"Slipknot","packaging":null,"status":"Official","packaging-id":null,"quality":"normal"},{"text-representation":{"language":"eng","script":"Latn"},"id":"26443585-fe82-4287-a5aa-0a2626f5d316","status-id":"4e304316-386d-3409-af2e-78857eec5cfe","country":"US","disambiguation":"original
+        pressing","date":"1999-06-29","barcode":"016861865528","release-events":[{"area":{"name":"United
+        States","id":"489ce91b-6658-3307-9877-795b68554c98","sort-name":"United States","iso-3166-1-codes":["US"],"disambiguation":""},"date":"1999-06-29"}],"packaging":null,"title":"Slipknot","status":"Official","quality":"normal","packaging-id":null},{"country":"US","id":"06459c97-b386-4544-abc6-d39af991556d","text-representation":{"language":"eng","script":"Latn"},"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","barcode":"016861865559","disambiguation":"original
+        pressing, limited edition","date":"1999-06-29","release-events":[{"area":{"sort-name":"United
+        States","iso-3166-1-codes":["US"],"disambiguation":"","id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States"},"date":"1999-06-29"}],"packaging":"Digipak","title":"Slipknot","status":"Official","quality":"normal","packaging-id":"8f931351-d2e2-310f-afc6-37b89ddba246"},{"country":"US","status-id":"4e304316-386d-3409-af2e-78857eec5cfe","id":"be999f7c-9a46-47b9-bd24-fc0b917e8050","text-representation":{"language":"eng","script":"Latn"},"barcode":null,"date":"1999-06-29","disambiguation":"","release-events":[{"date":"1999-06-29","area":{"iso-3166-1-codes":["US"],"sort-name":"United
+        States","disambiguation":"","id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States"}}],"title":"Slipknot","packaging":null,"status":"Official","quality":"normal","packaging-id":null},{"release-events":[{"date":"1999-07-21","area":{"id":"2db42837-c832-3c27-b4a3-08198f75693c","disambiguation":"","iso-3166-1-codes":["JP"],"sort-name":"Japan","name":"Japan"}}],"disambiguation":"original
+        pressing","date":"1999-07-21","barcode":"4988015085082","id":"8a069e1f-3866-3b9a-941c-c20e984bf89f","status-id":"4e304316-386d-3409-af2e-78857eec5cfe","text-representation":{"script":"Latn","language":"eng"},"country":"JP","packaging-id":null,"quality":"normal","status":"Official","packaging":null,"title":"Slipknot"},{"status":"Official","quality":"normal","packaging-id":"8f931351-d2e2-310f-afc6-37b89ddba246","title":"Slipknot","packaging":"Digipak","release-events":[{"area":{"disambiguation":"","iso-3166-1-codes":["GB"],"sort-name":"United
+        Kingdom","id":"8a754a16-0027-3a29-b6d7-2b40ea0481ed","name":"United Kingdom"},"date":"1999-12-06"}],"text-representation":{"language":"eng","script":"Latn"},"id":"bda33248-fbfb-3aff-884c-1bd1b31fcbef","status-id":"4e304316-386d-3409-af2e-78857eec5cfe","country":"GB","date":"1999-12-06","disambiguation":"limited
+        edition","barcode":"016861865597"},{"packaging-id":"ec27701a-4a22-37f4-bfac-6616e0f9750a","quality":"normal","status":"Official","packaging":"Jewel
+        Case","title":"Slipknot","release-events":[{"date":"1999-12-08","area":{"id":"ef1b7cc0-cd26-36f4-8ea0-04d9623786c7","sort-name":"Netherlands","iso-3166-1-codes":["NL"],"disambiguation":"","name":"Netherlands"}}],"disambiguation":"Parental
+        Advisory","date":"1999-12-08","barcode":"016861865580","text-representation":{"script":"Latn","language":"eng"},"id":"8b32aa09-32da-31bb-9ab7-a235545601eb","status-id":"4e304316-386d-3409-af2e-78857eec5cfe","country":"NL"},{"packaging-id":null,"quality":"normal","status":"Promotion","packaging":null,"title":"Spit
+        It Out","release-events":[{"date":"1999","area":{"id":"89a675c2-3e37-3518-b83c-418bad59a85a","iso-3166-1-codes":["XE"],"sort-name":"Europe","disambiguation":"","name":"Europe"}}],"date":"1999","disambiguation":"","barcode":null,"id":"49f37676-bf93-4d64-8296-259cd5b45f56","text-representation":{"script":"Latn","language":"eng"},"status-id":"518ffc83-5cde-34df-8627-81bff5093d92","country":"XE"},{"title":"Slipknot","packaging":null,"quality":"normal","packaging-id":null,"status":"Promotion","disambiguation":"","date":"1999","barcode":null,"status-id":"518ffc83-5cde-34df-8627-81bff5093d92","id":"760482e0-b7d5-4cc8-9881-5bb28e5b6b8d","text-representation":{"language":"eng","script":"Latn"},"country":"GB","release-events":[{"area":{"id":"8a754a16-0027-3a29-b6d7-2b40ea0481ed","disambiguation":"","iso-3166-1-codes":["GB"],"sort-name":"United
+        Kingdom","name":"United Kingdom"},"date":"1999"}]},{"country":"GB","status-id":"4e304316-386d-3409-af2e-78857eec5cfe","id":"04b427aa-c746-3057-bd9a-8654736595d4","text-representation":{"language":"eng","script":"Latn"},"barcode":null,"date":"1999","disambiguation":"","release-events":[{"area":{"name":"United
+        Kingdom","id":"8a754a16-0027-3a29-b6d7-2b40ea0481ed","disambiguation":"","iso-3166-1-codes":["GB"],"sort-name":"United
+        Kingdom"},"date":"1999"}],"title":"Slipknot","packaging":null,"status":"Official","quality":"normal","packaging-id":null},{"release-events":[{"date":"1999","area":{"name":"United
+        States","iso-3166-1-codes":["US"],"disambiguation":"","sort-name":"United
+        States","id":"489ce91b-6658-3307-9877-795b68554c98"}}],"barcode":"","disambiguation":"","date":"1999","country":"US","status-id":"518ffc83-5cde-34df-8627-81bff5093d92","id":"24d73fa9-aab9-43b4-bc29-7540d5846909","text-representation":{"language":"eng","script":"Latn"},"quality":"normal","packaging-id":null,"status":"Promotion","title":"Wait
+        and Bleed","packaging":null},{"date":"1999","disambiguation":"explicit, reissue","barcode":"016861865528","id":"fb8a6511-0c54-48a8-a3c5-d79f198eb6b8","status-id":"4e304316-386d-3409-af2e-78857eec5cfe","text-representation":{"script":"Latn","language":"eng"},"country":"US","release-events":[{"area":{"name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"],"disambiguation":"","id":"489ce91b-6658-3307-9877-795b68554c98"},"date":"1999"}],"packaging":"Jewel
+        Case","title":"Slipknot","quality":"normal","packaging-id":"ec27701a-4a22-37f4-bfac-6616e0f9750a","status":"Official"},{"date":"1999","disambiguation":"","barcode":null,"id":"93872c50-d5ef-4216-b67e-6ccbc913629b","status-id":"518ffc83-5cde-34df-8627-81bff5093d92","text-representation":{"script":"Latn","language":"eng"},"country":"US","release-events":[{"date":"1999","area":{"name":"United
+        States","id":"489ce91b-6658-3307-9877-795b68554c98","disambiguation":"","iso-3166-1-codes":["US"],"sort-name":"United
+        States"}}],"title":"Clean Radio Sampler","packaging":null,"quality":"normal","packaging-id":null,"status":"Promotion"},{"barcode":null,"date":"1999","disambiguation":"","country":"US","text-representation":{"language":"eng","script":"Latn"},"id":"bd73d886-4516-4c28-ac79-ea472e0b7062","status-id":"518ffc83-5cde-34df-8627-81bff5093d92","release-events":[{"area":{"name":"United
+        States","id":"489ce91b-6658-3307-9877-795b68554c98","disambiguation":"","iso-3166-1-codes":["US"],"sort-name":"United
+        States"},"date":"1999"}],"packaging":null,"title":"Exclusive Metal Radio Sampler","packaging-id":null,"quality":"normal","status":"Promotion"},{"barcode":null,"date":"1999","disambiguation":"","country":"US","id":"7b41c88c-9f50-337a-96c8-2f14b4cb0f04","text-representation":{"script":"Latn","language":"eng"},"status-id":"518ffc83-5cde-34df-8627-81bff5093d92","release-events":[{"date":"1999","area":{"name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"],"disambiguation":"","id":"489ce91b-6658-3307-9877-795b68554c98"}}],"packaging":null,"title":"Slipknot","packaging-id":null,"quality":"normal","status":"Promotion"},{"release-events":[{"area":{"name":"United
+        Kingdom","iso-3166-1-codes":["GB"],"disambiguation":"","sort-name":"United
+        Kingdom","id":"8a754a16-0027-3a29-b6d7-2b40ea0481ed"},"date":"2000-02-28"}],"barcode":"016861211257","date":"2000-02-28","disambiguation":"","country":"GB","id":"7a4ab745-cb8d-400b-9a65-a4e2242cb199","text-representation":{"language":"eng","script":"Latn"},"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","packaging-id":"8f931351-d2e2-310f-afc6-37b89ddba246","quality":"normal","status":"Official","packaging":"Digipak","title":"Wait
+        and Bleed"},{"title":"Slipknot","packaging":null,"packaging-id":null,"quality":"normal","status":"Official","disambiguation":"","date":"2000-03-07","barcode":null,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","id":"abf84e29-0272-4fb0-bee4-153b3a72076e","text-representation":{"language":"eng","script":"Latn"},"country":"US","release-events":[{"date":"2000-03-07","area":{"name":"United
+        States","iso-3166-1-codes":["US"],"sort-name":"United States","disambiguation":"","id":"489ce91b-6658-3307-9877-795b68554c98"}}]},{"barcode":"016861865528","date":"2000-03-14","disambiguation":"clean
+        version","country":"US","id":"908dbaf4-9b7c-414e-ae45-35b922d52387","text-representation":{"language":"eng","script":"Latn"},"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","release-events":[{"date":"2000-03-14","area":{"name":"United
+        States","id":"489ce91b-6658-3307-9877-795b68554c98","iso-3166-1-codes":["US"],"disambiguation":"","sort-name":"United
+        States"}}],"title":"Slipknot","packaging":null,"packaging-id":null,"quality":"normal","status":"Official"},{"id":"bf325f67-1444-38cc-9207-a31fc2396f4c","status-id":"4e304316-386d-3409-af2e-78857eec5cfe","text-representation":{"script":"Latn","language":"eng"},"country":"JP","date":"2000-03-23","disambiguation":"","barcode":"4527583002468","release-events":[{"date":"2000-03-23","area":{"name":"Japan","id":"2db42837-c832-3c27-b4a3-08198f75693c","iso-3166-1-codes":["JP"],"disambiguation":"","sort-name":"Japan"}}],"packaging":null,"title":"Slipknot","status":"Official","quality":"normal","packaging-id":null},{"barcode":null,"disambiguation":"","date":"2000-06-13","country":"US","id":"2260432b-7153-4d44-94ae-076e75c42462","text-representation":{"script":"Latn","language":"eng"},"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","release-events":[{"date":"2000-06-13","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","sort-name":"United
+        States","iso-3166-1-codes":["US"],"disambiguation":"","name":"United States"}}],"title":"Maximum
+        Slipknot: The Unauthorised Biography of Slipknot","packaging":null,"packaging-id":null,"quality":"normal","status":"Official"}],"disambiguation":"US
+        metal band","gender":null,"life-span":{"end":null,"begin":"1995","ended":false},"country":"US","end_area":null,"sort-name":"Slipknot","gender-id":null,"type":"Group","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","iso-3166-1-codes":["US"],"disambiguation":"","sort-name":"United
+        States","name":"United States"}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://musicbrainz.org/ws/2/artist/a466c2a2-6517-42fb-a160-1087c3bafd9f?inc=releases&fmt=json
+  recorded_at: Thu, 28 Nov 2019 05:55:50 GMT
+recorded_with: VCR 5.0.0

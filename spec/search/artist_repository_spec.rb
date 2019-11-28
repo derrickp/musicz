@@ -42,6 +42,38 @@ RSpec.describe Musicz::Search::ArtistRepository do
         end
       end
     end
+
+    context 'given some relationships' do
+      let(:id_options) do
+        Musicz::Search::Options::IdSearch.new(
+          id: 'a466c2a2-6517-42fb-a160-1087c3bafd9f',
+          relationships: ['releases']
+        )
+      end
+
+      it 'returns the related entities' do
+        VCR.use_cassette('id_search_with_relationships') do
+          expect(subject.releases.empty?).to be(false)
+        end
+      end
+
+      context 'given invalid relationships' do
+        let(:id_options) do
+          Musicz::Search::Options::IdSearch.new(
+            id: 'a466c2a2-6517-42fb-a160-1087c3bafd9f',
+            relationships: ['pizza']
+          )
+        end
+
+        it 'returns an error response' do
+          VCR.use_cassette('id_seach_invalid_relationships') do
+            expect(subject.error).to eq(
+              "#{id_options.relationships.first} is not a valid inc parameter for the artist resource."
+            )
+          end
+        end
+      end
+    end
   end
 
   describe '#by_term' do

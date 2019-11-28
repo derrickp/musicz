@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://musicbrainz.org/ws/2/artist/a466c2a2-6517-42fb-a160-1087c3bafd9f?inc=pizza&fmt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Musicz https://github.com/derrickp/musicz
+      Expect:
+      - ''
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Thu, 28 Nov 2019 06:02:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '143'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=15
+      X-RateLimit-Limit:
+      - '1200'
+      X-RateLimit-Remaining:
+      - '917'
+      X-RateLimit-Reset:
+      - '1574920941'
+      Server:
+      - Plack::Handler::Starlet
+      ETag:
+      - '"f12c6c495a678dcde7b4471b4b20b5c2"'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"error":"pizza is not a valid inc parameter for the artist resource.","help":"For
+        usage, please see: https://musicbrainz.org/development/mmd"}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://musicbrainz.org/ws/2/artist/a466c2a2-6517-42fb-a160-1087c3bafd9f?inc=pizza&fmt=json
+  recorded_at: Thu, 28 Nov 2019 06:02:21 GMT
+recorded_with: VCR 5.0.0
