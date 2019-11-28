@@ -43,4 +43,16 @@ RSpec.describe Musicz::Search::ArtistRepository do
       end
     end
   end
+
+  describe '#by_term' do
+    subject { repo.by_term(term) }
+
+    let(:term) { 'Slipknot' }
+
+    it 'should return an ArtistList' do
+      VCR.use_cassette('artist_term_search') do
+        expect(subject).to be_a(Musicz::Entities::ArtistList)
+      end
+    end
+  end
 end

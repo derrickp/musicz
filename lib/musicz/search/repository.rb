@@ -29,6 +29,16 @@ module Musicz
         end
       end
 
+      def by_term_with_entity(term, endpoint, entity_class)
+        query = { query: term }.merge(format_params)
+        response = request.get(endpoint: endpoint, parameters: query)
+        if response.success?
+          entity_class.new(JSON.parse(response.body))
+        else
+          build_error(response)
+        end
+      end
+
       def format_params
         {
           fmt: 'json'
