@@ -3,6 +3,7 @@
 require 'musicz/entities/alias'
 require 'musicz/entities/area'
 require 'musicz/entities/artist_credit'
+require 'musicz/entities/artist_list'
 require 'musicz/entities/artist_reference'
 require 'musicz/entities/artist'
 require 'musicz/entities/disc_id'
