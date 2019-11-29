@@ -19,7 +19,29 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Since it's still early stages, most things are not done, even the convenience methods.
+
+But basic usage
+
+```ruby
+require 'musicz'
+
+Musicz::Configuration.configure do |config|
+  config.app_name = 'YOUR_APP_NAME'
+  config.contact = 'YOUR_CONTACT_INFO'
+end
+
+request = Musicz::Request.new(config: Musicz::Configuration.config)
+artist_repo = Musicz::Search::ArtistRepository(request: request)
+
+# Search by ID
+id_options = Musicz::Search::Options::IdSearch.new(id: 'ID')
+artist = artist_repo.by_id(id_options)
+
+# Search by term
+term = 'SOME_BAND_NAME'
+artist_list = artist.by_term(term)
+```
 
 ## Development
 
@@ -29,7 +51,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/musicz. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/derrickp/musicz. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
