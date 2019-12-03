@@ -1,4 +1,6 @@
 # Musicz
+[!Specs](https://github.com/derrickp/musicz/workflows/Specs/badge.svg)
+
 This will be a basic wrapper around the musicbrainz search API.
 
 ## Installation
