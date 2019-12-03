@@ -13,6 +13,7 @@ module Musicz
       attribute :id, Types::Strict::String
       attribute :name, Types::Strict::String
       attribute :sort_name, Types::Strict::String
+      attribute? :score, Types::Strict::Integer.optional
       attribute? :country, Types::Strict::String.optional
       attribute? :disambiguation, Types::Strict::String.optional
       attribute :type, Types::Strict::String
