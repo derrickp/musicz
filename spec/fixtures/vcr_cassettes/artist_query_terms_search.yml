@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://musicbrainz.org/ws/2/artist?query=artist%3ASlipknot+AND+type%3AGroup&fmt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Musicz https://github.com/derrickp/musicz
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 29 Nov 2019 01:21:24 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2457'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=15
+      Vary:
+      - Accept-Encoding
+      X-RateLimit-Limit:
+      - '1200'
+      X-RateLimit-Remaining:
+      - '858'
+      X-RateLimit-Reset:
+      - '1574990484'
+      Last-Modified:
+      - Fri, 29 Nov 2019 01:14:50 GMT
+      ETag:
+      - '"YWY0NTE4MDAwMDAwMDAwMFNvbHI="'
+      X-Cache-Status:
+      - MISS
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjcmVhdGVkIjoiMjAxOS0xMS0yOVQwMToyMToyNC42MTFaIiwiY291bnQiOjQsIm9mZnNldCI6MCwiYXJ0aXN0cyI6W3siaWQiOiJhNDY2YzJhMi02NTE3LTQyZmItYTE2MC0xMDg3YzNiYWZkOWYiLCJ0eXBlIjoiR3JvdXAiLCJ0eXBlLWlkIjoiZTQzMWY1ZjYtYjVkMi0zNDNkLThiMzYtNzI2MDdmZmZiNzRiIiwic2NvcmUiOjEwMCwibmFtZSI6IlNsaXBrbm90Iiwic29ydC1uYW1lIjoiU2xpcGtub3QiLCJjb3VudHJ5IjoiVVMiLCJhcmVhIjp7ImlkIjoiNDg5Y2U5MWItNjY1OC0zMzA3LTk4NzctNzk1YjY4NTU0Yzk4IiwidHlwZSI6IkNvdW50cnkiLCJ0eXBlLWlkIjoiMDZkZDBhZTQtOGM3NC0zMGJiLWI0M2QtOTVkY2VkZjk2MWRlIiwibmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJzb3J0LW5hbWUiOiJVbml0ZWQgU3RhdGVzIiwibGlmZS1zcGFuIjp7ImVuZGVkIjpudWxsfX0sImJlZ2luLWFyZWEiOnsiaWQiOiIyYmRhMTY0Ny1mNjRiLTQyNzctYWNjZS1lOWMxMjk2ZDA2NWUiLCJ0eXBlIjoiQ2l0eSIsInR5cGUtaWQiOiI2ZmQ4ZjI5YS0zZDBhLTMyZmMtOTgwZC1lYTY5N2I2OWRhNzgiLCJuYW1lIjoiRGVzIE1vaW5lcyIsInNvcnQtbmFtZSI6IkRlcyBNb2luZXMiLCJsaWZlLXNwYW4iOnsiZW5kZWQiOm51bGx9fSwiZGlzYW1iaWd1YXRpb24iOiJVUyBtZXRhbCBiYW5kIiwiaXNuaXMiOlsiMDAwMDAwMDExNTQ4MTcyMiJdLCJsaWZlLXNwYW4iOnsiYmVnaW4iOiIxOTk1IiwiZW5kZWQiOm51bGx9LCJ0YWdzIjpbeyJjb3VudCI6MiwibmFtZSI6ImhlYXZ5IG1ldGFsIn0seyJjb3VudCI6MSwibmFtZSI6Im1ldGFsIn0seyJjb3VudCI6NCwibmFtZSI6Im51IG1ldGFsIn0seyJjb3VudCI6LTEsIm5hbWUiOiJuZXcgbWV0YWwifSx7ImNvdW50IjozLCJuYW1lIjoiYWx0ZXJuYXRpdmUgbWV0YWwifSx7ImNvdW50IjotMSwibmFtZSI6InJhcCBtZXRhbCJ9LHsiY291bnQiOjIsIm5hbWUiOiJncm9vdmUgbWV0YWwifSx7ImNvdW50IjowLCJuYW1lIjoicm9jayBhbmQgaW5kaWUifV19LHsiaWQiOiJjZWI3YjZiZS0xZGJiLTRkODAtYjE1Ny01NTg4YmM4ODQ3NjQiLCJ0eXBlIjoiR3JvdXAiLCJ0eXBlLWlkIjoiZTQzMWY1ZjYtYjVkMi0zNDNkLThiMzYtNzI2MDdmZmZiNzRiIiwic2NvcmUiOjgxLCJuYW1lIjoiU2xpcGtub3QiLCJzb3J0LW5hbWUiOiJTbGlwa25vdCIsImNvdW50cnkiOiJVUyIsImFyZWEiOnsiaWQiOiI0ODljZTkxYi02NjU4LTMzMDctOTg3Ny03OTViNjg1NTRjOTgiLCJ0eXBlIjoiQ291bnRyeSIsInR5cGUtaWQiOiIwNmRkMGFlNC04Yzc0LTMwYmItYjQzZC05NWRjZWRmOTYxZGUiLCJuYW1lIjoiVW5pdGVkIFN0YXRlcyIsInNvcnQtbmFtZSI6IlVuaXRlZCBTdGF0ZXMiLCJsaWZlLXNwYW4iOnsiZW5kZWQiOm51bGx9fSwiZGlzYW1iaWd1YXRpb24iOiJMYXRlLTgwJ3MgcHVuayBiYW5kIiwibGlmZS1zcGFuIjp7ImVuZGVkIjpudWxsfSwidGFncyI6W3siY291bnQiOjEsIm5hbWUiOiJjb25uZWN0aWN1dCJ9LHsiY291bnQiOjEsIm5hbWUiOiJ1c2EifSx7ImNvdW50IjoxLCJuYW1lIjoicHVuayJ9LHsiY291bnQiOjEsIm5hbWUiOiJuZXcgaGF2ZW4ifV19LHsiaWQiOiI1Y2Q1Y2FiZi0xYzJjLTQ2Y2YtYjhlNi04M2M3YWJiMDM3YzAiLCJ0eXBlIjoiR3JvdXAiLCJ0eXBlLWlkIjoiZTQzMWY1ZjYtYjVkMi0zNDNkLThiMzYtNzI2MDdmZmZiNzRiIiwic2NvcmUiOjY1LCJuYW1lIjoiU2xpcGtub3QgVHJpYnV0ZSBCYW5kIiwic29ydC1uYW1lIjoiU2xpcGtub3QgVHJpYnV0ZSBCYW5kIiwibGlmZS1zcGFuIjp7ImVuZGVkIjpudWxsfX0seyJpZCI6IjFhN2EzNTA2LTdmODctNDhlNy04MmQxLTVmNmUwMDE1ODdmYiIsInR5cGUiOiJHcm91cCIsInR5cGUtaWQiOiJlNDMxZjVmNi1iNWQyLTM0M2QtOGIzNi03MjYwN2ZmZmI3NGIiLCJzY29yZSI6NjQsIm5hbWUiOiJTbGlwa25vdOadieS4piIsInNvcnQtbmFtZSI6IlNsaXBrbm90IFN1Z2luYW1pIiwiY291bnRyeSI6IkpQIiwiYXJlYSI6eyJpZCI6IjJkYjQyODM3LWM4MzItM2MyNy1iNGEzLTA4MTk4Zjc1NjkzYyIsInR5cGUiOiJDb3VudHJ5IiwidHlwZS1pZCI6IjA2ZGQwYWU0LThjNzQtMzBiYi1iNDNkLTk1ZGNlZGY5NjFkZSIsIm5hbWUiOiJKYXBhbiIsInNvcnQtbmFtZSI6IkphcGFuIiwibGlmZS1zcGFuIjp7ImVuZGVkIjpudWxsfX0sImRpc2FtYmlndWF0aW9uIjoiU2xpcGtub3QgVHJpYnV0ZSBCYW5kIiwibGlmZS1zcGFuIjp7ImJlZ2luIjoiMjAxNiIsImVuZGVkIjpudWxsfSwiYWxpYXNlcyI6W3sic29ydC1uYW1lIjoiU2xpcGtub3QgU3VnaW5hbWkiLCJ0eXBlLWlkIjoiODk0YWZiYTYtMjgxNi0zYzI0LTgwNzItZWFkYjY2YmQwNGJjIiwibmFtZSI6IlNsaXBrbm90IFN1Z2luYW1pIiwibG9jYWxlIjoiZW4iLCJ0eXBlIjoiQXJ0aXN0IG5hbWUiLCJwcmltYXJ5Ijp0cnVlLCJiZWdpbi1kYXRlIjpudWxsLCJlbmQtZGF0ZSI6bnVsbH1dfV19
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://musicbrainz.org/ws/2/artist?query=artist%3ASlipknot+AND+type%3AGroup&fmt=json
+  recorded_at: Fri, 29 Nov 2019 01:21:24 GMT
+recorded_with: VCR 5.0.0

@@ -5,6 +5,7 @@ require 'musicz/search/artist_repository'
 require 'musicz/request'
 require 'musicz/configuration'
 require 'musicz/search/options/id_search'
+require 'musicz/search/options/artist_query_terms'
 
 RSpec.describe Musicz::Search::ArtistRepository do
   let(:request) do
@@ -84,6 +85,29 @@ RSpec.describe Musicz::Search::ArtistRepository do
     it 'should return an ArtistList' do
       VCR.use_cassette('artist_term_search') do
         expect(subject).to be_a(Musicz::Entities::ArtistList)
+      end
+    end
+  end
+
+  describe '#by_query' do
+    subject { repo.by_query(query_terms) }
+
+    let(:query_terms) do
+      Musicz::Search::Options::ArtistQueryTerms.new(
+        artist: 'Slipknot',
+        type: 'Group'
+      )
+    end
+
+    it 'should return an ArtistList' do
+      VCR.use_cassette('artist_query_terms_search') do
+        expect(subject).to be_a(Musicz::Entities::ArtistList)
+      end
+    end
+
+    it 'returns a result that has a score' do
+      VCR.use_cassette('artist_query_terms_search') do
+        expect(subject.artists.first.score).to eq(100)
       end
     end
   end

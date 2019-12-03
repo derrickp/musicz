@@ -20,6 +20,17 @@ module Musicz
       def by_term(term)
         by_term_with_entity(term, ENDPOINT, Musicz::Entities::ArtistList)
       end
+
+      # @param query_terms [Musicz::Search::Options::ArtistQueryTerms]
+      # This executes a generic query against the MusicBrainz API
+      # No support for paging, so use decently specific queries
+      def by_query(query_terms)
+        by_query_with_entity(
+          query_terms,
+          ENDPOINT,
+          Musicz::Entities::ArtistList
+        )
+      end
     end
   end
 end

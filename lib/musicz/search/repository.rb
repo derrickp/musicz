@@ -39,6 +39,15 @@ module Musicz
         end
       end
 
+      def by_query_with_entity(query_terms, endpoint, entity_class)
+        parameters = { query: build_query_param(query_terms) }.
+                     merge(format_params)
+        response = request.get(endpoint: endpoint, parameters: parameters)
+        return build_error(response) unless response.success?
+
+        entity_class.new(JSON.parse(response.body))
+      end
+
       def format_params
         {
           fmt: 'json'
@@ -51,6 +60,17 @@ module Musicz
         {
           inc: relations.join('+')
         }
+      end
+
+      def build_query_param(query_terms)
+        valid_terms = query_terms.to_h.to_a.reject do |terms|
+          terms[0].to_s.empty?
+        end
+
+        query_items = valid_terms.map do |terms|
+          "#{terms[0]}:#{terms[1]}"
+        end
+        query_items.join(' AND ')
       end
 
       def build_error(response)
