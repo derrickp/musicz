@@ -40,6 +40,16 @@ module Musicz
     @config
   end
 
+  def self.config=(value)
+    unless value.is_a?(Configuration)
+      raise ArgumentError, 'value is not a Configuration object'
+    end
+
+    raise ArgumentError, 'invalid Configuration value' unless value.valid?
+
+    @config = value
+  end
+
   def self.configure
     raise Configuration::NoConfigBlockGiven unless block_given?
 

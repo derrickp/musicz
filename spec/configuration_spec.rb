@@ -32,6 +32,32 @@ RSpec.describe Musicz::Configuration do
     end
   end
 
+  describe '.config=' do
+    subject { Musicz.config = config }
+
+    let(:config) { Musicz::Configuration.build_default }
+
+    it 'sets the value successfully' do
+      expect(subject).to be
+    end
+
+    context 'given an object that is not a Configuration object' do
+      let(:config) { 'not-config' }
+
+      it 'raises an ArgumentError' do
+        expect { subject }.to raise_error(ArgumentError)
+      end
+    end
+
+    context 'given an invalid Configuration object' do
+      let(:config) { Musicz::Configuration.new }
+
+      it 'raises an ArgumentError' do
+        expect { subject }.to raise_error(ArgumentError)
+      end
+    end
+  end
+
   describe '#valid?' do
     subject { config.valid? }
 
