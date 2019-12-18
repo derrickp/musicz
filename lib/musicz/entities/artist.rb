@@ -6,6 +6,7 @@ require 'musicz/entities/life_span'
 require 'musicz/entities/rating'
 require 'musicz/entities/tag'
 require 'musicz/entities/release_reference'
+require 'musicz/entities/area'
 
 module Musicz
   module Entities
@@ -13,6 +14,7 @@ module Musicz
       attribute :id, Types::Strict::String
       attribute :name, Types::Strict::String
       attribute :sort_name, Types::Strict::String
+      attribute? :begin_area, Area.optional
       attribute? :score, Types::Strict::Integer.optional
       attribute? :country, Types::Strict::String.optional
       attribute? :disambiguation, Types::Strict::String.optional
