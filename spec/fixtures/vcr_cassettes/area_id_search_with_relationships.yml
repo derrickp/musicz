@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://musicbrainz.org/ws/2/area/c5446ccc-24aa-4110-8130-38c97b5d83da?inc=area-rels&fmt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Musicz https://github.com/derrickp/musicz
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      date:
+      - Thu, 19 Dec 2019 03:15:15 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '628'
+      vary:
+      - Accept-Encoding
+      x-ratelimit-limit:
+      - '1200'
+      x-ratelimit-remaining:
+      - '891'
+      x-ratelimit-reset:
+      - '1576725315'
+      server:
+      - Plack::Handler::Starlet
+      etag:
+      - '"4139dde3edc2a53d2169b35b8ce32cd0"'
+      access-control-allow-origin:
+      - "*"
+      x-cache-status:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"disambiguation":"","name":"Victoria","relations":[{"attribute-ids":{},"type":"part
+        of","type-id":"de7cc874-8b1b-3a05-8272-f3834c968fb7","target-credit":"","attributes":[],"attribute-values":{},"source-credit":"","area":{"disambiguation":"","id":"b0ca16ba-146e-4078-8b0f-e70f763fbb60","name":"Capital
+        Regional District","sort-name":"Capital Regional District"},"ended":false,"target-type":"area","direction":"backward","end":null,"begin":null}],"life-span":{"end":null,"begin":null,"ended":false},"type-id":"6fd8f29a-3d0a-32fc-980d-ea697b69da78","sort-name":"Victoria","id":"c5446ccc-24aa-4110-8130-38c97b5d83da","type":"City"}'
+    http_version: '2'
+    adapter_metadata:
+      effective_url: https://musicbrainz.org/ws/2/area/c5446ccc-24aa-4110-8130-38c97b5d83da?inc=area-rels&fmt=json
+  recorded_at: Thu, 19 Dec 2019 03:15:15 GMT
+recorded_with: VCR 5.0.0

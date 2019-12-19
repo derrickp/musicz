@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://musicbrainz.org/ws/2/area/c5446ccc-24aa-4110-8130-38c97b5d83da?fmt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Musicz https://github.com/derrickp/musicz
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      date:
+      - Thu, 19 Dec 2019 03:15:14 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '221'
+      x-ratelimit-limit:
+      - '1200'
+      x-ratelimit-remaining:
+      - '1027'
+      x-ratelimit-reset:
+      - '1576725315'
+      server:
+      - Plack::Handler::Starlet
+      etag:
+      - '"ef8c5e843ad44c80636a9fd07d22afcd"'
+      access-control-allow-origin:
+      - "*"
+      x-cache-status:
+      - STALE
+    body:
+      encoding: UTF-8
+      string: '{"life-span":{"begin":null,"ended":false,"end":null},"name":"Victoria","type-id":"6fd8f29a-3d0a-32fc-980d-ea697b69da78","disambiguation":"","type":"City","id":"c5446ccc-24aa-4110-8130-38c97b5d83da","sort-name":"Victoria"}'
+    http_version: '2'
+    adapter_metadata:
+      effective_url: https://musicbrainz.org/ws/2/area/c5446ccc-24aa-4110-8130-38c97b5d83da?fmt=json
+  recorded_at: Thu, 19 Dec 2019 03:15:15 GMT
+recorded_with: VCR 5.0.0

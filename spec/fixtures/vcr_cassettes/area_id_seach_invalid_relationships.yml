@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://musicbrainz.org/ws/2/area/c5446ccc-24aa-4110-8130-38c97b5d83da?inc=pizza&fmt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Musicz https://github.com/derrickp/musicz
+      Expect:
+      - ''
+  response:
+    status:
+      code: 400
+      message: ''
+    headers:
+      date:
+      - Thu, 19 Dec 2019 03:15:15 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '141'
+      x-ratelimit-limit:
+      - '1200'
+      x-ratelimit-remaining:
+      - '817'
+      x-ratelimit-reset:
+      - '1576725315'
+      server:
+      - Plack::Handler::Starlet
+      etag:
+      - '"233e00843fe15cc0d871fadd6f72bb66"'
+      access-control-allow-origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"help":"For usage, please see: https://musicbrainz.org/development/mmd","error":"pizza
+        is not a valid inc parameter for the area resource."}'
+    http_version: '2'
+    adapter_metadata:
+      effective_url: https://musicbrainz.org/ws/2/area/c5446ccc-24aa-4110-8130-38c97b5d83da?inc=pizza&fmt=json
+  recorded_at: Thu, 19 Dec 2019 03:15:15 GMT
+recorded_with: VCR 5.0.0

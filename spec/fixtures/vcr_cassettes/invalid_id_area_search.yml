@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://musicbrainz.org/ws/2/area/ggf-6517-42fb-a160-1087c3bafd9f?fmt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Musicz https://github.com/derrickp/musicz
+      Expect:
+      - ''
+  response:
+    status:
+      code: 400
+      message: ''
+    headers:
+      date:
+      - Thu, 19 Dec 2019 03:15:15 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '97'
+      x-ratelimit-limit:
+      - '1200'
+      x-ratelimit-remaining:
+      - '963'
+      x-ratelimit-reset:
+      - '1576725315'
+      server:
+      - Plack::Handler::Starlet
+      etag:
+      - '"3dfd9a96b34e7d04b918ad79bf429369"'
+      access-control-allow-origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"error":"Invalid mbid.","help":"For usage, please see: https://musicbrainz.org/development/mmd"}'
+    http_version: '2'
+    adapter_metadata:
+      effective_url: https://musicbrainz.org/ws/2/area/ggf-6517-42fb-a160-1087c3bafd9f?fmt=json
+  recorded_at: Thu, 19 Dec 2019 03:15:15 GMT
+recorded_with: VCR 5.0.0
