@@ -9,7 +9,10 @@ module Musicz
     class ReleaseReference < Entity
       attribute :id, Types::Strict::String
       attribute :title, Types::Strict::String
+      attribute? :status, Types::Strict::String.optional
       attribute? :disambiguation, Types::Strict::String.optional
+      attribute? :date, Types::Strict::String.optional
+      attribute? :country, Types::Strict::String.optional
     end
   end
 end
