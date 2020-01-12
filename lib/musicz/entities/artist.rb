@@ -18,12 +18,12 @@ module Musicz
       attribute? :score, Types::Strict::Integer.optional
       attribute? :country, Types::Strict::String.optional
       attribute? :disambiguation, Types::Strict::String.optional
-      attribute :type, Types::Strict::String
+      attribute? :type, Types::Strict::String.optional
       attribute? :life_span, LifeSpan.optional
       attribute :aliases, Types::Strict::Array.of(Alias).default([].freeze)
       attribute :tags, Types::Strict::Array.of(Tag).default([].freeze)
       attribute? :rating, Rating.optional
-      attribute? :releases, Types::Array.of(ReleaseReference)
+      attribute? :releases, Types::Array.of(ReleaseReference).default([].freeze)
     end
   end
 end
