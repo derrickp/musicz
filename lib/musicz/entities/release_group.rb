@@ -1,4 +1,6 @@
-module 'musicz/entity'
+# frozen_string_literal: true
+
+require 'musicz/entity'
 
 module Musicz
   module Entities
