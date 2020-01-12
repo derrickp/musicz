@@ -1,0 +1,272 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://musicbrainz.org/ws/2/recording?query=Slipknot&fmt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Musicz https://github.com/derrickp/musicz
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      date:
+      - Thu, 09 Jan 2020 20:35:20 GMT
+      content-type:
+      - application/json
+      vary:
+      - Accept-Encoding
+      x-ratelimit-limit:
+      - '1200'
+      x-ratelimit-remaining:
+      - '747'
+      x-ratelimit-reset:
+      - '1578602121'
+      last-modified:
+      - Thu, 09 Jan 2020 20:31:35 GMT
+      etag:
+      - '"ZDhkNmZjMDAwMDAwMDAwMFNvbHI="'
+      x-cache-status:
+      - MISS
+      access-control-allow-origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"created":"2020-01-09T20:35:20.658Z","count":1700,"offset":0,"recordings":[{"id":"230872d5-d907-46da-92d6-396f4761a444","score":100,"title":"Slipknot
+        (Hangknot, Slipknot)","length":153360,"video":null,"artist-credit":[{"name":"Woody
+        Guthrie","artist":{"id":"cbd827e1-4e38-427e-a436-642683433732","name":"Woody
+        Guthrie","sort-name":"Guthrie, Woody","disambiguation":"American singer-songwriter","aliases":[{"sort-name":"Woodie
+        Guthrie","name":"Woodie Guthrie","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Guthrie,
+        Woodrow Wilson","type-id":"d4dcd0c0-b341-3612-a332-c0ce797b25cf","name":"Woodrow
+        Wilson Guthrie","locale":null,"type":"Legal name","primary":null,"begin-date":null,"end-date":null},{"sort-name":"Woddy
+        Guthrie","name":"Woddy Guthrie","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"e9af5658-c75e-4aee-a986-a629a820909b","count":4,"title":"Some
+        Folk","status":"Official","artist-credit":[{"name":"Woody Guthrie","artist":{"id":"cbd827e1-4e38-427e-a436-642683433732","name":"Woody
+        Guthrie","sort-name":"Guthrie, Woody","disambiguation":"American singer-songwriter"}}],"release-group":{"id":"fd68274c-1492-3e80-97c5-9a3db9c35d5b","type-id":"dd2a21e1-0c00-3729-a7a0-de60b84eb5d1","title":"Some
+        Folk","primary-type":"Album","secondary-types":["Compilation"]},"date":"2006-09-18","country":"GB","release-events":[{"date":"2006-09-18","area":{"id":"8a754a16-0027-3a29-b6d7-2b40ea0481ed","name":"United
+        Kingdom","sort-name":"United Kingdom","iso-3166-1-codes":["GB"]}}],"track-count":100,"media":[{"position":4,"format":"CD","track":[{"id":"6739d450-6812-3e85-be54-d0c5ff736f28","number":"14","title":"Slipknot
+        (Hangknot Slipknot)","length":153360}],"track-count":26,"track-offset":13}]},{"id":"a179cb1a-c4a8-4932-8eea-968fda17ad67","count":2,"title":"Ramblin''
+        Round","status":"Official","artist-credit":[{"name":"Woody Guthrie","artist":{"id":"cbd827e1-4e38-427e-a436-642683433732","name":"Woody
+        Guthrie","sort-name":"Guthrie, Woody","disambiguation":"American singer-songwriter"}}],"release-group":{"id":"210ee8aa-4b31-34dd-9246-71b9a5b23e4d","type-id":"dd2a21e1-0c00-3729-a7a0-de60b84eb5d1","title":"Ramblin''
+        Round","primary-type":"Album","secondary-types":["Compilation"]},"date":"2000-12-19","country":"GB","release-events":[{"date":"2000-12-19","area":{"id":"8a754a16-0027-3a29-b6d7-2b40ea0481ed","name":"United
+        Kingdom","sort-name":"United Kingdom","iso-3166-1-codes":["GB"]}}],"track-count":40,"media":[{"position":2,"format":"CD","track":[{"id":"c3b46a5b-bd64-3d66-8662-3badbb857473","number":"2","title":"Slipknot
+        (Hangknot, Slipknot)","length":153626}],"track-count":20,"track-offset":1}]}]},{"id":"91b8b3f0-ac7c-4018-89e9-66739d363cf1","score":98,"title":"Slipknot!","video":null,"artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead","aliases":[{"sort-name":"Greatful Dead","name":"Greatful
+        Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"The
+        Grateful Dead","name":"The Grateful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatfull
+        Dead","name":"Greatfull Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"96ba4e5b-bfd7-4520-b52d-abba2bf1a399","count":6,"title":"Formerly
+        the Warlocks","status":"Official","artist-credit":[{"name":"Grateful Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead"}}],"release-group":{"id":"761c1d87-ced0-4895-ba43-6eaff271879e","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","title":"Formerly
+        the Warlocks","primary-type":"Album","secondary-types":["Live"]},"date":"2010-09-07","country":"US","release-events":[{"date":"2010-09-07","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"track-count":42,"media":[{"position":2,"format":"CD","track":[{"id":"76f6d2c0-f2a3-3108-a87b-ba55156a1ff8","number":"2","title":"Slipknot!"}],"track-count":6,"track-offset":1}]}]},{"id":"2854ab19-074f-4924-a307-39dd78e7d51a","score":98,"title":"Slipknot","length":201000,"video":null,"artist-credit":[{"name":"Poor
+        Old Lu","artist":{"id":"a01be3c2-6a84-4f3e-8b36-394cd387a88e","name":"Poor
+        Old Lu","sort-name":"Poor Old Lu"}}],"releases":[{"id":"23436f92-bab8-49f9-b892-edc081f597d9","count":1,"title":"Straight
+        Six","status":"Official","release-group":{"id":"deb7af35-7fee-3898-9fd0-999688912def","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Straight
+        Six","primary-type":"Album"},"date":"1995","country":"US","release-events":[{"date":"1995","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"track-count":6,"media":[{"position":1,"format":"CD","track":[{"id":"3e066df3-694d-3065-810e-570c2e3c81fc","number":"3","title":"Slipknot","length":201000}],"track-count":6,"track-offset":2}]}]},{"id":"54ea601b-179b-406b-942a-cb32e0e8a843","score":98,"title":"Slipknot-","length":604400,"video":null,"artist-credit":[{"name":"Phil
+        Lesh & Friends","artist":{"id":"ffb7c323-5113-4bb0-a5f7-5b657eec4083","name":"Phil
+        Lesh & Friends","sort-name":"Lesh, Phil & Friends","aliases":[{"sort-name":"Phil
+        & Friends","name":"Phil & Friends","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Phil
+        and Friends","name":"Phil and Friends","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Phil
+        Lesh and Friends","name":"Phil Lesh and Friends","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"8e1901fa-fd48-4d23-be85-2d2050ed2b2c","count":2,"title":"2002-06-23:
+        Manchester, TN, USA","status":"Bootleg","artist-credit":[{"name":"Phil Lesh
+        & Friends","artist":{"id":"ffb7c323-5113-4bb0-a5f7-5b657eec4083","name":"Phil
+        Lesh & Friends","sort-name":"Lesh, Phil & Friends"}}],"release-group":{"id":"23e7590b-0161-3ef4-823e-d8e65421bd7f","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","title":"2002-06-23:
+        Manchester, TN, USA","primary-type":"Album","secondary-types":["Live"]},"track-count":15,"media":[{"position":1,"track":[{"id":"5f9202cc-f2d8-3b4c-a8fc-8e11ab364a7c","number":"4","title":"Slipknot-","length":604400}],"track-count":7,"track-offset":3}]}]},{"id":"9a0e25d1-1984-409f-8ab9-8c36311ca8f9","score":98,"title":"Slipknot!","video":null,"artist-credit":[{"name":"The
+        Other Ones","artist":{"id":"a4c13824-64dd-49bb-bada-2f29acbc33e2","name":"The
+        Other Ones","sort-name":"Other Ones, The","disambiguation":"American rock
+        band formed by former Grateful Dead members"}}],"releases":[{"id":"107c6343-3ca2-427c-b93f-0841ca536481","count":2,"title":"2002-12-05:
+        Henry J. Kaiser Auditorium, Oakland, CA, USA","status":"Bootleg","release-group":{"id":"ccccb7a3-4748-36f8-953f-c01e5c41311d","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","title":"2002-12-05:
+        Henry J. Kaiser Auditorium, Oakland, CA, USA","primary-type":"Album","secondary-types":["Live"]},"track-count":18,"media":[{"position":2,"track":[{"id":"a6d520c2-5886-3336-a035-cc3157945519","number":"7","title":"Slipknot!"}],"track-count":9,"track-offset":6}]}]},{"id":"ebb11aba-d1b0-4e10-8286-d835111e9430","score":98,"title":"Slipknot!","video":null,"artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead","aliases":[{"sort-name":"Greatful Dead","name":"Greatful
+        Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatfull
+        Dead","name":"Greatfull Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"The
+        Grateful Dead","name":"The Grateful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"3394f366-3ee9-4a3f-bb6d-a9c1e116af16","count":2,"title":"1992-06-28:
+        Noblesville, IN, USA","status":"Bootleg","artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead"}}],"release-group":{"id":"dc9ebeb0-971c-3cb7-9376-cb0915109008","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","title":"1992-06-28:
+        Noblesville, IN, USA","primary-type":"Album","secondary-types":["Live"]},"track-count":19,"media":[{"position":1,"track":[{"id":"cabb4533-adb2-3dd5-9f75-ffc5efcb0769","number":"2","title":"Slipknot!"}],"track-count":9,"track-offset":1}]}]},{"id":"13f77d88-5a67-41f6-8f50-818147f7c7cd","score":98,"title":"Slipknot!","video":null,"artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead","aliases":[{"sort-name":"The Grateful Dead","name":"The
+        Grateful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatful
+        Dead","name":"Greatful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatfull
+        Dead","name":"Greatfull Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"1db5298f-e51c-410b-9bcf-1bc28aacf6a3","count":2,"title":"1976-06-24:
+        Upper Darby, PA, USA","status":"Bootleg","artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead"}}],"release-group":{"id":"ef29026f-5b57-3fce-b76c-ce83a4363164","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","title":"1976-06-24:
+        Upper Darby, PA, USA","primary-type":"Album","secondary-types":["Live"]},"track-count":18,"media":[{"position":2,"track":[{"id":"c6d33980-006b-37ad-a2f9-ecc56239cacd","number":"2","title":"Slipknot!"}],"track-count":8,"track-offset":1}]}]},{"id":"ecd14912-3b7c-4be8-b657-361915b28a3f","score":98,"title":"Slipknot!","video":null,"artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead","aliases":[{"sort-name":"Greatfull Dead","name":"Greatfull
+        Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatful
+        Dead","name":"Greatful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"The
+        Grateful Dead","name":"The Grateful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"331fb109-d472-41b7-bf84-583c714b73d8","count":2,"title":"1991-05-05:
+        Sacramento, CA, USA","status":"Bootleg","artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead"}}],"release-group":{"id":"4fcee313-a05f-306b-842e-bdb867cfa287","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","title":"1991-05-05:
+        Sacramento, CA, USA","primary-type":"Album","secondary-types":["Live"]},"track-count":21,"media":[{"position":1,"track":[{"id":"5d6db169-78a5-33d6-8a0d-bae706f6f2f0","number":"3","title":"Slipknot!"}],"track-count":9,"track-offset":2}]}]},{"id":"8e7d337d-6fcc-46c4-a973-880f94e264e4","score":98,"title":"Slipknot!","video":null,"artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead","aliases":[{"sort-name":"The Grateful Dead","name":"The
+        Grateful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatfull
+        Dead","name":"Greatfull Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatful
+        Dead","name":"Greatful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"5f9cf621-f78e-4ba6-be05-8b129b4f3cfd","count":2,"title":"1991-06-14:
+        Washington, DC, USA","status":"Bootleg","artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead"}}],"release-group":{"id":"88343c81-492f-325b-98ab-15dbaf0e5fb3","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","title":"1991-06-14:
+        Washington, DC, USA","primary-type":"Album","secondary-types":["Live"]},"track-count":19,"media":[{"position":2,"track":[{"id":"bb9e42ca-0548-3309-b62f-6abbf3e500ca","number":"2","title":"Slipknot!"}],"track-count":10,"track-offset":1}]}]},{"id":"7109ab05-5d41-4b31-bb28-d5d91084a527","score":98,"title":"Slipknot!","video":null,"artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead","aliases":[{"sort-name":"The Grateful Dead","name":"The
+        Grateful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatful
+        Dead","name":"Greatful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatfull
+        Dead","name":"Greatfull Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"4f2d5b58-02f7-4ea2-96f0-820141de9835","count":2,"title":"1976-12-31:
+        Daly City, CA, USA","status":"Bootleg","artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead"}}],"release-group":{"id":"07e0252e-0a40-3ff6-bcd4-ca27bc35dac5","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","title":"1976-12-31:
+        Daly City, CA, USA","primary-type":"Album","secondary-types":["Live"]},"track-count":23,"media":[{"position":2,"track":[{"id":"49d04d68-98c2-36fd-ab60-50275f9090ad","number":"10","title":"Slipknot!"}],"track-count":16,"track-offset":9}]}]},{"id":"a6255514-05d6-4a5f-9ba2-fcb8f21a274b","score":98,"title":"Slipknot!","video":null,"artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead","aliases":[{"sort-name":"Greatful Dead","name":"Greatful
+        Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"The
+        Grateful Dead","name":"The Grateful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatfull
+        Dead","name":"Greatfull Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"e90a8936-cae6-4de7-965f-545f4f6e9191","count":2,"title":"1991-10-31:
+        Oakland, CA, USA","status":"Bootleg","artist-credit":[{"name":"Grateful Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead"}}],"release-group":{"id":"e166ca09-a256-3026-9155-0a07719480f3","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","title":"1991-10-31:
+        Oakland, CA, USA","primary-type":"Album","secondary-types":["Live"]},"track-count":21,"media":[{"position":1,"track":[{"id":"ccf7d8c1-3592-38cd-bc8f-b67cef933090","number":"2","title":"Slipknot!"}],"track-count":7,"track-offset":1}]},{"id":"261f4b66-d588-4bb4-bbe1-9b26bef2d726","count":3,"title":"1991-10-31:
+        Oakland, CA, USA","artist-credit":[{"name":"Grateful Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead"}}],"release-group":{"id":"e166ca09-a256-3026-9155-0a07719480f3","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","title":"1991-10-31:
+        Oakland, CA, USA","primary-type":"Album","secondary-types":["Live"]},"track-count":20,"media":[{"position":1,"track":[{"id":"ebb5e890-78c8-4949-89ba-c4b22f994ea9","number":"3","title":"Slipknot!"}],"track-count":8,"track-offset":2}]}]},{"id":"10d29614-90bf-4202-aaf0-8ce9df19e472","score":98,"title":"Slipknot!","video":null,"artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead","aliases":[{"sort-name":"Greatfull Dead","name":"Greatfull
+        Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"The
+        Grateful Dead","name":"The Grateful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatful
+        Dead","name":"Greatful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"c9e947b4-7d2c-4ec2-a7f5-9feb0230ba1d","count":2,"title":"1990-07-18:
+        Noblesville, IN, USA","status":"Bootleg","artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead"}}],"release-group":{"id":"10121ae6-e148-3c42-9aaf-3261a25ea73a","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","title":"1990-07-18:
+        Noblesville, IN, USA","primary-type":"Album","secondary-types":["Live"]},"track-count":20,"media":[{"position":1,"track":[{"id":"59034e84-6ba2-319a-8050-549a47ffb769","number":"2","title":"Slipknot!"}],"track-count":10,"track-offset":1}]}]},{"id":"2e0e0ba5-2a82-4bd9-b601-e78fcfd18574","score":98,"title":"Slipknot!","video":null,"artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead","aliases":[{"sort-name":"Greatful Dead","name":"Greatful
+        Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"The
+        Grateful Dead","name":"The Grateful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatfull
+        Dead","name":"Greatfull Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"b0e81d40-53dc-42cb-8e9c-04fe51f2a54d","count":2,"title":"1991-02-21:
+        Oakland, CA, USA","status":"Bootleg","artist-credit":[{"name":"Grateful Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead"}}],"release-group":{"id":"a905ca99-f425-343d-85e9-126db16a4673","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","title":"1991-02-21:
+        Oakland, CA, USA","primary-type":"Album","secondary-types":["Live"]},"track-count":20,"media":[{"position":1,"track":[{"id":"2a0078d8-c085-343d-ae0b-6bf18db727ac","number":"3","title":"Slipknot!"}],"track-count":9,"track-offset":2}]}]},{"id":"76697096-64ab-443c-894c-d1b5b9efa40f","score":98,"title":"Slipknot!","length":230000,"video":null,"artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead","aliases":[{"sort-name":"The Grateful Dead","name":"The
+        Grateful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatfull
+        Dead","name":"Greatfull Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatful
+        Dead","name":"Greatful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"4db27e5e-f367-4065-9428-eaaddb82f60a","count":18,"title":"Spring
+        1990","artist-credit":[{"name":"Grateful Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead"}}],"release-group":{"id":"891924c2-51cc-44b7-b06d-6e84621746e3","type-id":"dd2a21e1-0c00-3729-a7a0-de60b84eb5d1","title":"Spring
+        1990","primary-type":"Album","secondary-types":["Compilation","Live"]},"date":"2012","country":"US","release-events":[{"date":"2012","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"track-count":125,"media":[{"position":12,"format":"CD","track":[{"id":"40f4af17-d124-40f1-9162-3b144f0df80a","number":"9","title":"Slipknot!","length":230000}],"track-count":12,"track-offset":8}]}]},{"id":"c53bb876-04fc-4065-bb0a-5b97e3bc5bbc","score":98,"title":"Slipknot!","length":349000,"video":null,"artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead","aliases":[{"sort-name":"The Grateful Dead","name":"The
+        Grateful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatfull
+        Dead","name":"Greatfull Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatful
+        Dead","name":"Greatful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"4db27e5e-f367-4065-9428-eaaddb82f60a","count":18,"title":"Spring
+        1990","artist-credit":[{"name":"Grateful Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead"}}],"release-group":{"id":"891924c2-51cc-44b7-b06d-6e84621746e3","type-id":"dd2a21e1-0c00-3729-a7a0-de60b84eb5d1","title":"Spring
+        1990","primary-type":"Album","secondary-types":["Compilation","Live"]},"date":"2012","country":"US","release-events":[{"date":"2012","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"track-count":125,"media":[{"position":13,"format":"CD","track":[{"id":"c0b0390e-799f-47a7-b177-85240672b106","number":"2","title":"Slipknot!","length":349000}],"track-count":9,"track-offset":1}]}]},{"id":"531b2210-dea7-4e91-b056-9140f6668d8b","score":98,"title":"Slipknot","video":null,"artist-credit":[{"name":"Lil
+        Jack","artist":{"id":"391d7070-3782-495e-b16d-0b8754118c09","name":"Lil Jack","sort-name":"Lil
+        Jack","disambiguation":"Hip hop / Horrorcore"}}],"releases":[{"id":"d509f1cf-6c5b-4ad2-9e9c-f13fb0f70a98","count":1,"title":"Ikillu","status":"Official","artist-credit":[{"joinphrase":"
+        Presents ","name":"Lord Infamous","artist":{"id":"98f078b7-6c22-49a6-8bdc-bc7e9ac116f8","name":"Lord
+        Infamous","sort-name":"Lord Infamous"}},{"name":"Lil Jack","artist":{"id":"391d7070-3782-495e-b16d-0b8754118c09","name":"Lil
+        Jack","sort-name":"Lil Jack","disambiguation":"Hip hop / Horrorcore"}}],"release-group":{"id":"692baeff-3fad-48b7-a9cf-08380617c685","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Ikillu","primary-type":"Album","secondary-types":["Mixtape/Street"]},"date":"2012","country":"US","release-events":[{"date":"2012","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"track-count":15,"media":[{"position":1,"format":"CD","track":[{"id":"519455ac-1b0a-4f04-9e6c-da3e346deefd","number":"7","title":"Slipknot"}],"track-count":15,"track-offset":6}]}]},{"id":"bef5636d-2d72-4f28-b723-3e9ccc6f9dba","score":98,"title":"Slipknot","length":209099,"video":null,"artist-credit":[{"joinphrase":"
+        feat. ","name":"XXXTENTACION","artist":{"id":"61af87f4-16ee-4431-8504-cc06187079fb","name":"XXXTENTACION","sort-name":"XXXTENTACION","disambiguation":"US
+        rapper","aliases":[{"sort-name":"Onfroy, Jahseh Dwayne Ricardo","type-id":"d4dcd0c0-b341-3612-a332-c0ce797b25cf","name":"Jahseh
+        Dwayne Ricardo Onfroy","locale":null,"type":"Legal name","primary":null,"begin-date":null,"end-date":null}]}},{"joinphrase":"
+        & ","name":"Kin$oul","artist":{"id":"ad0fc777-9774-46ba-be5b-5d1b25a4ee97","name":"Kin$oul","sort-name":"Kin$oul","disambiguation":"US
+        rapper"}},{"name":"Killstation","artist":{"id":"d100076c-3fb2-4854-a1da-315ba216b9a2","name":"Killstation","sort-name":"Killstation","disambiguation":"Rapper","aliases":[{"sort-name":"Santana,
+        Nolan","type-id":"d4dcd0c0-b341-3612-a332-c0ce797b25cf","name":"Nolan Santana","locale":null,"type":"Legal
+        name","primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"7a50f5fa-d14c-4dcc-b780-6310e00bbf4f","count":1,"title":"Members
+        Only, Vol. 3","status":"Official","artist-credit":[{"name":"XXXTENTACION","artist":{"id":"61af87f4-16ee-4431-8504-cc06187079fb","name":"XXXTENTACION","sort-name":"XXXTENTACION","disambiguation":"US
+        rapper"}}],"release-group":{"id":"0f32feb4-e0da-4197-9bf3-20f6de1e0b4f","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Members
+        Only, Vol. 3","primary-type":"Album","secondary-types":["Mixtape/Street"]},"date":"2017-06-26","country":"US","release-events":[{"date":"2017-06-26","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"track-count":23,"media":[{"position":1,"format":"Digital
+        Media","track":[{"id":"f7c2b473-6094-4600-aec7-92eaa2f3081f","number":"13","title":"Slipknot","length":209000}],"track-count":23,"track-offset":12}]},{"id":"1d2006e6-479c-4a72-b12b-184bb1cd7f9e","count":1,"title":"Members
+        Only, Volume 3","status":"Official","artist-credit":[{"name":"XXXTENTACION","artist":{"id":"61af87f4-16ee-4431-8504-cc06187079fb","name":"XXXTENTACION","sort-name":"XXXTENTACION","disambiguation":"US
+        rapper"}}],"release-group":{"id":"0f32feb4-e0da-4197-9bf3-20f6de1e0b4f","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Members
+        Only, Vol. 3","primary-type":"Album","secondary-types":["Mixtape/Street"]},"date":"2017-07-14","country":"US","release-events":[{"date":"2017-07-14","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"track-count":23,"media":[{"position":1,"format":"Digital
+        Media","track":[{"id":"240e848c-acae-4830-975f-33a415c1950f","number":"13","title":"Slipknot","length":209107}],"track-count":23,"track-offset":12}]},{"id":"02d5a9f0-7de4-473c-83ae-6f23a78dd73d","count":1,"title":"Revenge","status":"Official","artist-credit":[{"name":"XXXTENTACION","artist":{"id":"61af87f4-16ee-4431-8504-cc06187079fb","name":"XXXTENTACION","sort-name":"XXXTENTACION","disambiguation":"US
+        rapper"}}],"release-group":{"id":"3d998f95-a8b7-48e9-acc6-5d1043d3949d","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Revenge","primary-type":"Album","secondary-types":["Mixtape/Street"]},"date":"2017-05-16","country":"US","release-events":[{"date":"2017-05-16","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}},{"date":"2017-05-16","area":{"id":"08310658-51eb-3801-80de-5a0739207115","name":"France","sort-name":"France","iso-3166-1-codes":["FR"]}}],"track-count":8,"media":[{"position":1,"format":"Digital
+        Media","track":[{"id":"e4d44a1c-90d6-4b5f-a733-42eeae16aa19","number":"6","title":"Slipknot","length":209099}],"track-count":8,"track-offset":5}]}],"isrcs":["USUYG1151241"]},{"id":"9ad6cc0a-764b-4430-94ce-47cc50dc07fb","score":98,"title":"Slipknot","length":313000,"video":null,"artist-credit":[{"name":"The
+        Dead","artist":{"id":"9abcbe69-fa83-4d34-8e34-ffc8c9876685","name":"The Dead","sort-name":"Dead,
+        The","disambiguation":"03-15 post Grateful Dead"}}],"releases":[{"id":"3791474e-93dd-468f-a4b1-bbac4296c3e4","count":3,"title":"2003-06-24
+        PNC Art Center - Holmdel, NJ","status":"Official","release-group":{"id":"50a985c2-e739-3831-b895-4f272dbaffb6","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","title":"2003-06-24
+        PNC Art Center - Holmdel, NJ","primary-type":"Album","secondary-types":["Live"]},"track-count":22,"media":[{"position":3,"track":[{"id":"79f6fe80-545a-37fd-b31c-267efee749c3","number":"6","title":"Slipknot","length":313000}],"track-count":9,"track-offset":5}]}]},{"id":"e3d67a36-7c88-43b4-a985-94bcf5deb24f","score":98,"title":"Slipknot","length":482000,"video":null,"artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead","aliases":[{"sort-name":"Greatfull Dead","name":"Greatfull
+        Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"The
+        Grateful Dead","name":"The Grateful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatful
+        Dead","name":"Greatful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"6673b13b-f238-46df-8ce7-d00b1cf16833","count":1,"title":"1977-02-26:
+        Swing Theatre, San Bernardino CA, USA","status":"Bootleg","artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead"}}],"release-group":{"id":"a79113b9-eac1-3c55-a27b-792e4240236b","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","title":"1977-02-26:
+        Swing Theatre, San Bernardino CA, USA","primary-type":"Album","secondary-types":["Live"]},"track-count":8,"media":[{"position":1,"track":[{"id":"81610c8f-d2df-32f0-b48e-a89bd751a11e","number":"2","title":"Slipknot","length":482000}],"track-count":8,"track-offset":1}]}]},{"id":"57018a4d-14ff-4470-be04-d7f80d035393","score":98,"title":"Slipknot!","video":null,"artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead","aliases":[{"sort-name":"Greatfull Dead","name":"Greatfull
+        Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"The
+        Grateful Dead","name":"The Grateful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatful
+        Dead","name":"Greatful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"c940c794-2204-4add-b7f7-895377626fb6","count":2,"title":"1990-09-19:
+        New York, NY, USA","status":"Bootleg","artist-credit":[{"name":"Grateful Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead"}}],"release-group":{"id":"fd2595a3-a512-3c66-8a70-0d4682290612","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","title":"1990-09-19:
+        New York, NY, USA","primary-type":"Album","secondary-types":["Live"]},"track-count":19,"media":[{"position":1,"track":[{"id":"ad808d34-6086-3ce6-8275-bcc1f7b8ba86","number":"8","title":"Slipknot!"}],"track-count":9,"track-offset":7}]}]},{"id":"e9ebf099-bec3-4aba-84c2-9a4b8468b209","score":98,"title":"Slipknot!","video":null,"artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead","aliases":[{"sort-name":"Greatful Dead","name":"Greatful
+        Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"The
+        Grateful Dead","name":"The Grateful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatfull
+        Dead","name":"Greatfull Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"43e5cebe-e8de-4110-a2b2-9356f3971a2e","count":2,"title":"1990-12-13:
+        Denver, CO, USA","status":"Bootleg","artist-credit":[{"name":"Grateful Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead"}}],"release-group":{"id":"fefd2577-da6f-31d9-9a64-8154ffaaf533","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","title":"1990-12-13:
+        Denver, CO, USA","primary-type":"Album","secondary-types":["Live"]},"track-count":21,"media":[{"position":2,"track":[{"id":"533016ba-b363-31fd-b403-b5ef79138f07","number":"3","title":"Slipknot!"}],"track-count":12,"track-offset":2}]}]},{"id":"3a3be97f-b287-4b84-bb89-5587aa2928cf","score":98,"title":"Slipknot!","video":null,"artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead","aliases":[{"sort-name":"Greatfull Dead","name":"Greatfull
+        Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"The
+        Grateful Dead","name":"The Grateful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatful
+        Dead","name":"Greatful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"1ef0961d-f8b8-44ad-8129-ced1d523974f","count":2,"title":"1990-03-30:
+        Uniondale, NY, USA","status":"Bootleg","artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead"}}],"release-group":{"id":"02bb0c03-8e91-317c-9939-82ba2cad4273","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","title":"1990-03-30:
+        Uniondale, NY, USA","primary-type":"Album","secondary-types":["Live"]},"track-count":21,"media":[{"position":1,"track":[{"id":"e2dc0914-7bf6-36b2-af01-789f195172be","number":"2","title":"Slipknot!"}],"track-count":9,"track-offset":1}]}]},{"id":"94d214ec-b1af-494f-8e7b-4587eee0793c","score":98,"title":"Slipknot!","video":null,"artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead","aliases":[{"sort-name":"Greatfull Dead","name":"Greatfull
+        Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"The
+        Grateful Dead","name":"The Grateful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatful
+        Dead","name":"Greatful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"16ffdd55-57b7-4be5-97a4-b83a88fbc7d6","count":2,"title":"1990-05-05:
+        Carson, CA, USA","status":"Bootleg","artist-credit":[{"name":"Grateful Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead"}}],"release-group":{"id":"cfb05efa-b6ba-3069-a540-9df153ce25f4","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","title":"1990-05-05:
+        Carson, CA, USA","primary-type":"Album","secondary-types":["Live"]},"track-count":22,"media":[{"position":1,"track":[{"id":"59de8b67-9bca-3a6e-98a3-6545236fe0bf","number":"4","title":"Slipknot!"}],"track-count":11,"track-offset":3}]}]},{"id":"de644ffa-474b-4b19-ae17-319fe4a4e196","score":98,"title":"Slipknot!","video":null,"artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead","aliases":[{"sort-name":"Greatfull Dead","name":"Greatfull
+        Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatful
+        Dead","name":"Greatful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"The
+        Grateful Dead","name":"The Grateful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"5013067a-a8a0-492c-8df6-1f5cbbae9edd","count":2,"title":"1991-03-24:
+        Albany, NY, USA","status":"Bootleg","artist-credit":[{"name":"Grateful Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead"}}],"release-group":{"id":"d56deae5-7587-3ae7-9ed3-858f73f0a258","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","title":"1991-03-24:
+        Albany, NY, USA","primary-type":"Album","secondary-types":["Live"]},"track-count":22,"media":[{"position":1,"track":[{"id":"c0283d1d-bf90-3666-8a80-945157a8dbea","number":"2","title":"Slipknot!"}],"track-count":9,"track-offset":1}]}]},{"id":"e6d4a9c0-89cc-4328-931c-eae522581457","score":98,"title":"Slipknot!","length":424000,"video":null,"artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead","aliases":[{"sort-name":"Greatfull Dead","name":"Greatfull
+        Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"The
+        Grateful Dead","name":"The Grateful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Greatful
+        Dead","name":"Greatful Dead","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]}}],"releases":[{"id":"9ebeb6f5-c23f-46a6-9c34-ab9b005e0619","count":3,"title":"1977-05-09:
+        War Memorial Auditorium, Buffalo, NY, USA","status":"Bootleg","artist-credit":[{"name":"Grateful
+        Dead","artist":{"id":"6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6","name":"Grateful
+        Dead","sort-name":"Grateful Dead"}}],"release-group":{"id":"b2a2a2f5-7974-4c67-bf21-f08c28a71eaa","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","title":"1977-05-09:
+        War Memorial Auditorium, Buffalo, NY, USA","primary-type":"Album","secondary-types":["Live"]},"track-count":21,"media":[{"position":1,"format":"Digital
+        Media","track":[{"id":"af3d2eea-20dd-392e-ac9f-e09438c15f31","number":"2","title":"Slipknot!","length":424000}],"track-count":9,"track-offset":1}]}]}]}'
+    http_version: '2'
+    adapter_metadata:
+      effective_url: https://musicbrainz.org/ws/2/recording?query=Slipknot&fmt=json
+  recorded_at: Thu, 09 Jan 2020 20:35:20 GMT
+recorded_with: VCR 5.0.0

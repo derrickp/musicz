@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://musicbrainz.org/ws/2/recording/4cd3d49b-8fe7-4cb2-bbb4-e40545239d79?fmt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Musicz https://github.com/derrickp/musicz
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      date:
+      - Thu, 09 Jan 2020 20:35:19 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '112'
+      x-ratelimit-limit:
+      - '1200'
+      x-ratelimit-remaining:
+      - '1031'
+      x-ratelimit-reset:
+      - '1578602121'
+      server:
+      - Plack::Handler::Starlet
+      etag:
+      - '"1fa3bb15f75d53c8c16504b1817f4c83"'
+      access-control-allow-origin:
+      - "*"
+      x-cache-status:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"video":false,"title":"Prelude","length":27000,"disambiguation":"","id":"4cd3d49b-8fe7-4cb2-bbb4-e40545239d79"}'
+    http_version: '2'
+    adapter_metadata:
+      effective_url: https://musicbrainz.org/ws/2/recording/4cd3d49b-8fe7-4cb2-bbb4-e40545239d79?fmt=json
+  recorded_at: Thu, 09 Jan 2020 20:35:19 GMT
+recorded_with: VCR 5.0.0

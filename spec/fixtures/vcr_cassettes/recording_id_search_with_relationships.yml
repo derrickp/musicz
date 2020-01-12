@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://musicbrainz.org/ws/2/recording/4cd3d49b-8fe7-4cb2-bbb4-e40545239d79?inc=releases&fmt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Musicz https://github.com/derrickp/musicz
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      date:
+      - Thu, 09 Jan 2020 20:37:16 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '1761'
+      vary:
+      - Accept-Encoding
+      x-ratelimit-limit:
+      - '1200'
+      x-ratelimit-remaining:
+      - '804'
+      x-ratelimit-reset:
+      - '1578602236'
+      server:
+      - Plack::Handler::Starlet
+      etag:
+      - '"9b1756573d21f2487487bedc8d6bb3f8"'
+      access-control-allow-origin:
+      - "*"
+      x-cache-status:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"video":false,"length":27000,"releases":[{"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","id":"3aeb2e72-347a-42f2-b474-deded1dedfa1","disambiguation":"","packaging-id":"8f931351-d2e2-310f-afc6-37b89ddba246","quality":"normal","title":"Used
+        Future","date":"2018-03-23","barcode":"888072048003","release-events":[{"area":{"iso-3166-1-codes":["US"],"id":"489ce91b-6658-3307-9877-795b68554c98","disambiguation":"","sort-name":"United
+        States","name":"United States"},"date":"2018-03-23"}],"packaging":"Digipak","text-representation":{"script":"Latn","language":"eng"},"country":"US","status":"Official"},{"country":"FR","status":"Official","id":"14346b7b-d20a-4266-b430-16b73f6afc8d","disambiguation":"","status-id":"4e304316-386d-3409-af2e-78857eec5cfe","date":"2018-03-23","title":"Used
+        Future","quality":"normal","packaging-id":"119eba76-b343-3e02-a292-f0f00644bb9b","packaging":"None","text-representation":{"script":"Latn","language":"eng"},"release-events":[{"area":{"name":"France","sort-name":"France","id":"08310658-51eb-3801-80de-5a0739207115","disambiguation":"","iso-3166-1-codes":["FR"]},"date":"2018-03-23"}],"barcode":null},{"status":"Official","country":"XE","text-representation":{"language":"eng","script":"Latn"},"packaging":"Jewel
+        Case","barcode":"888072048003","release-events":[{"date":"2018","area":{"id":"89a675c2-3e37-3518-b83c-418bad59a85a","disambiguation":"","iso-3166-1-codes":["XE"],"name":"Europe","sort-name":"Europe"}}],"title":"Used
+        Future","date":"2018","packaging-id":"ec27701a-4a22-37f4-bfac-6616e0f9750a","quality":"normal","disambiguation":"","id":"fcf7c7f5-f6d3-4800-b481-7a4ea220ef5f","status-id":"4e304316-386d-3409-af2e-78857eec5cfe"}],"title":"Prelude","id":"4cd3d49b-8fe7-4cb2-bbb4-e40545239d79","disambiguation":""}'
+    http_version: '2'
+    adapter_metadata:
+      effective_url: https://musicbrainz.org/ws/2/recording/4cd3d49b-8fe7-4cb2-bbb4-e40545239d79?inc=releases&fmt=json
+  recorded_at: Thu, 09 Jan 2020 20:37:16 GMT
+recorded_with: VCR 5.0.0

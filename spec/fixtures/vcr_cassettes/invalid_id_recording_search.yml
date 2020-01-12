@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://musicbrainz.org/ws/2/recording/ggf-6517-42fb-a160-1087c3bafd9f?fmt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Musicz https://github.com/derrickp/musicz
+      Expect:
+      - ''
+  response:
+    status:
+      code: 400
+      message: ''
+    headers:
+      date:
+      - Thu, 09 Jan 2020 20:35:19 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '97'
+      x-ratelimit-limit:
+      - '1200'
+      x-ratelimit-remaining:
+      - '971'
+      x-ratelimit-reset:
+      - '1578602121'
+      server:
+      - Plack::Handler::Starlet
+      etag:
+      - '"326ef3f5b9aabae00194a1623cdb3810"'
+      access-control-allow-origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"help":"For usage, please see: https://musicbrainz.org/development/mmd","error":"Invalid
+        mbid."}'
+    http_version: '2'
+    adapter_metadata:
+      effective_url: https://musicbrainz.org/ws/2/recording/ggf-6517-42fb-a160-1087c3bafd9f?fmt=json
+  recorded_at: Thu, 09 Jan 2020 20:35:20 GMT
+recorded_with: VCR 5.0.0

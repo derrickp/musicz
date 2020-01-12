@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://musicbrainz.org/ws/2/recording?query=artist%3A%22The+Sword%22+AND+title%3APrelude&fmt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Musicz https://github.com/derrickp/musicz
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      date:
+      - Thu, 09 Jan 2020 20:35:21 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '2289'
+      vary:
+      - Accept-Encoding
+      x-ratelimit-limit:
+      - '1200'
+      x-ratelimit-remaining:
+      - '600'
+      x-ratelimit-reset:
+      - '1578602121'
+      last-modified:
+      - Thu, 09 Jan 2020 20:30:19 GMT
+      etag:
+      - '"YWQyMmZjMDAwMDAwMDAwMFNvbHI="'
+      x-cache-status:
+      - MISS
+      access-control-allow-origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"created":"2020-01-09T20:35:21.068Z","count":1,"offset":0,"recordings":[{"id":"4cd3d49b-8fe7-4cb2-bbb4-e40545239d79","score":100,"title":"Prelude","length":27000,"video":null,"artist-credit":[{"name":"The
+        Sword","artist":{"id":"40dc452a-6b63-4b7e-a106-062739155866","name":"The Sword","sort-name":"Sword,
+        The","disambiguation":"US metal band"}}],"releases":[{"id":"fcf7c7f5-f6d3-4800-b481-7a4ea220ef5f","count":1,"title":"Used
+        Future","status":"Official","release-group":{"id":"e54f9590-6395-4995-a05d-e0598e5f9e1d","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Used
+        Future","primary-type":"Album"},"date":"2018","country":"XE","release-events":[{"date":"2018","area":{"id":"89a675c2-3e37-3518-b83c-418bad59a85a","name":"Europe","sort-name":"Europe","iso-3166-1-codes":["XE"]}}],"track-count":13,"media":[{"position":1,"format":"CD","track":[{"id":"2e0bb58d-87b7-492d-9c6a-6799bee60709","number":"1","title":"Prelude","length":27000}],"track-count":13,"track-offset":0}]},{"id":"14346b7b-d20a-4266-b430-16b73f6afc8d","count":1,"title":"Used
+        Future","status":"Official","release-group":{"id":"e54f9590-6395-4995-a05d-e0598e5f9e1d","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Used
+        Future","primary-type":"Album"},"date":"2018-03-23","country":"FR","release-events":[{"date":"2018-03-23","area":{"id":"08310658-51eb-3801-80de-5a0739207115","name":"France","sort-name":"France","iso-3166-1-codes":["FR"]}}],"track-count":13,"media":[{"position":1,"format":"Digital
+        Media","track":[{"id":"f66016d7-59e6-4529-97d9-451953cfb4ae","number":"1","title":"Prelude","length":26928}],"track-count":13,"track-offset":0}]},{"id":"3aeb2e72-347a-42f2-b474-deded1dedfa1","count":1,"title":"Used
+        Future","status":"Official","release-group":{"id":"e54f9590-6395-4995-a05d-e0598e5f9e1d","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Used
+        Future","primary-type":"Album"},"date":"2018-03-23","country":"US","release-events":[{"date":"2018-03-23","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+        States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"track-count":13,"media":[{"position":1,"format":"CD","track":[{"id":"1b96825a-f39b-4f5a-908c-be9a71234128","number":"1","title":"Prelude","length":27000}],"track-count":13,"track-offset":0}]}]}]}'
+    http_version: '2'
+    adapter_metadata:
+      effective_url: https://musicbrainz.org/ws/2/recording?query=artist%3A%22The+Sword%22+AND+title%3APrelude&fmt=json
+  recorded_at: Thu, 09 Jan 2020 20:35:21 GMT
+recorded_with: VCR 5.0.0
