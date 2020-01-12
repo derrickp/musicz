@@ -3,6 +3,7 @@
 require 'musicz/entity'
 require 'musicz/entities/text_representation'
 require 'musicz/entities/release_event'
+require 'musicz/entities/release_group'
 
 module Musicz
   module Entities
@@ -13,6 +14,7 @@ module Musicz
       attribute? :disambiguation, Types::Strict::String.optional
       attribute? :date, Types::Strict::String.optional
       attribute? :country, Types::Strict::String.optional
+      attribute? :release_group, ReleaseGroup.optional
     end
   end
 end
