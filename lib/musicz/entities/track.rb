@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'musicz/entity'
-require 'musicz/entities/recording_reference'
-require 'musicz/entities/artist_credit'
+require "musicz/entity"
+require "musicz/entities/recording_reference"
+require "musicz/entities/artist_credit"
 
 module Musicz
   module Entities

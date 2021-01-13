@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'json'
-require 'musicz/entities/error'
+require "json"
+require "musicz/entities/error"
 
 module Musicz
   module Search
@@ -11,7 +11,7 @@ module Musicz
       end
 
       def by_id(_id_options)
-        raise NotImplementedError, 'subclass must implement'
+        raise NotImplementedError, "subclass must implement"
       end
 
       private
@@ -30,7 +30,7 @@ module Musicz
       end
 
       def by_term_with_entity(term, endpoint, entity_class)
-        query = { query: term }.merge(format_params)
+        query = {query: term}.merge(format_params)
         response = request.get(endpoint: endpoint, parameters: query)
         if response.success?
           entity_class.new(JSON.parse(response.body))
@@ -40,8 +40,8 @@ module Musicz
       end
 
       def by_query_with_entity(query_terms, endpoint, entity_class)
-        parameters = { query: build_query_param(query_terms) }.
-                     merge(format_params)
+        parameters = {query: build_query_param(query_terms)}
+          .merge(format_params)
         response = request.get(endpoint: endpoint, parameters: parameters)
         return build_error(response) unless response.success?
 
@@ -50,7 +50,7 @@ module Musicz
 
       def format_params
         {
-          fmt: 'json'
+          fmt: "json"
         }
       end
 
@@ -58,19 +58,19 @@ module Musicz
         return {} if relations.empty?
 
         {
-          inc: relations.join('+')
+          inc: relations.join("+")
         }
       end
 
       def build_query_param(query_terms)
-        valid_terms = query_terms.to_h.to_a.reject do |terms|
+        valid_terms = query_terms.to_h.to_a.reject { |terms|
           terms[0].to_s.empty?
-        end
+        }
 
-        query_items = valid_terms.map do |terms|
+        query_items = valid_terms.map { |terms|
           "#{terms[0]}:#{terms[1]}"
-        end
-        query_items.join(' AND ')
+        }
+        query_items.join(" AND ")
       end
 
       def build_error(response)
@@ -79,7 +79,7 @@ module Musicz
           Musicz::Entities::Error.new(parsed)
         else
           Musicz::Entities::Error.new(
-            help: 'Unknown error',
+            help: "Unknown error",
             error: response.body
           )
         end

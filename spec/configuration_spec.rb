@@ -1,75 +1,75 @@
-require 'spec_helper'
-require 'musicz/configuration'
+require "spec_helper"
+require "musicz/configuration"
 
 RSpec.describe Musicz::Configuration do
-  describe '.configure' do
+  describe ".configure" do
     after(:each) do
       Musicz.clear
     end
 
-    it 'yields a configuration object and does not raise' do
+    it "yields a configuration object and does not raise" do
       called = false
       Musicz.configure do |config|
         called = true
         expect(subject).to be_a(Musicz::Configuration)
-        config.app_name = 'test'
-        config.contact = 'test'
+        config.app_name = "test"
+        config.contact = "test"
       end
 
       expect(called).to eq(true)
     end
 
-    context 'when given no block' do
-      it 'raises an exception' do
+    context "when given no block" do
+      it "raises an exception" do
         expect { Musicz.configure }.to raise_error(Musicz::Configuration::NoConfigBlockGiven)
       end
     end
 
-    context 'when values are not filled out' do
-      it 'raises error' do
+    context "when values are not filled out" do
+      it "raises error" do
         expect { Musicz.configure {} }.to raise_error(Musicz::Configuration::InvalidConfiguration)
       end
     end
   end
 
-  describe '.config=' do
+  describe ".config=" do
     subject { Musicz.config = config }
 
     let(:config) { Musicz::Configuration.build_default }
 
-    it 'sets the value successfully' do
+    it "sets the value successfully" do
       expect(subject).to be
     end
 
-    context 'given an object that is not a Configuration object' do
-      let(:config) { 'not-config' }
+    context "given an object that is not a Configuration object" do
+      let(:config) { "not-config" }
 
-      it 'raises an ArgumentError' do
+      it "raises an ArgumentError" do
         expect { subject }.to raise_error(ArgumentError)
       end
     end
 
-    context 'given an invalid Configuration object' do
+    context "given an invalid Configuration object" do
       let(:config) { Musicz::Configuration.new }
 
-      it 'raises an ArgumentError' do
+      it "raises an ArgumentError" do
         expect { subject }.to raise_error(ArgumentError)
       end
     end
   end
 
-  describe '#valid?' do
+  describe "#valid?" do
     subject { config.valid? }
 
     let(:config) { described_class.new }
 
     it { is_expected.to eq(false) }
 
-    context 'with values filled out' do
+    context "with values filled out" do
       let(:config) do
         described_class.new.tap do |config|
-          config.app_name = 'test'
-          config.contact = 'test'
+          config.app_name = "test"
+          config.contact = "test"
         end
       end
 
@@ -77,7 +77,7 @@ RSpec.describe Musicz::Configuration do
     end
   end
 
-  describe '#errors' do
+  describe "#errors" do
     subject { config.errors }
 
     let(:config) do
@@ -86,13 +86,13 @@ RSpec.describe Musicz::Configuration do
       end
     end
 
-    it { is_expected.to contain_exactly('No base_uri', 'No contact', 'No app_name') }
+    it { is_expected.to contain_exactly("No base_uri", "No contact", "No app_name") }
 
-    context 'given valid values' do
+    context "given valid values" do
       let(:config) do
         described_class.new.tap do |config|
-          config.app_name = 'test'
-          config.contact = 'test'
+          config.app_name = "test"
+          config.contact = "test"
         end
       end
 

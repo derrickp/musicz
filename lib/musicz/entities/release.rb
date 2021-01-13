@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require 'musicz/entity'
-require 'musicz/entities/text_representation'
-require 'musicz/entities/artist_credit'
-require 'musicz/entities/label_info_reference'
-require 'musicz/entities/media'
+require "musicz/entity"
+require "musicz/entities/text_representation"
+require "musicz/entities/artist_credit"
+require "musicz/entities/label_info_reference"
+require "musicz/entities/media"
 
 module Musicz
   module Entities
@@ -30,8 +30,8 @@ module Musicz
         attribute :primary_type, Types::Strict::String
       end
 
-      attribute :release_events, Types::Array.of(ReleaseEvent).
-        default([].freeze)
+      attribute :release_events, Types::Array.of(ReleaseEvent)
+        .default([].freeze)
     end
   end
 end

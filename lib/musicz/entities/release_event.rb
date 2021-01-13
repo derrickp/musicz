@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'musicz/entity'
-require 'musicz/entities/area'
+require "musicz/entity"
+require "musicz/entities/area"
 
 module Musicz
   module Entities

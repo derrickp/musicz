@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-require 'musicz/entities/recording'
-require 'musicz/entities/recording_list'
-require 'musicz/search/repository'
+require "musicz/entities/recording"
+require "musicz/entities/recording_list"
+require "musicz/search/repository"
 
 module Musicz
   module Search
     class RecordingRepository < Repository
-      ENDPOINT = 'recording'
+      ENDPOINT = "recording"
 
       # @param id_options [Musicz::Search::Options::IdSearch]
       def by_id(id_options)

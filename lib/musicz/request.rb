@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'uri'
-require 'typhoeus'
+require "uri"
+require "typhoeus"
 
 module Musicz
   class Request
@@ -18,7 +18,7 @@ module Musicz
 
     def headers
       {
-        'User-Agent' => "#{@config.app_name} #{@config.contact}"
+        "User-Agent" => "#{@config.app_name} #{@config.contact}"
       }
     end
 

@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'musicz/entity'
-require 'musicz/entities/disc_id'
-require 'musicz/entities/track'
+require "musicz/entity"
+require "musicz/entities/disc_id"
+require "musicz/entities/track"
 
 module Musicz
   module Entities

@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require 'musicz/entity'
-require 'musicz/entities/text_representation'
-require 'musicz/entities/release_event'
-require 'musicz/entities/release_group'
+require "musicz/entity"
+require "musicz/entities/text_representation"
+require "musicz/entities/release_event"
+require "musicz/entities/release_group"
 
 module Musicz
   module Entities
