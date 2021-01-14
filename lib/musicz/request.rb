@@ -5,6 +5,14 @@ require "typhoeus"
 
 module Musicz
   class Request
+    def self.default_config
+      Musicz.config
+    end
+
+    def self.build(config: default_config)
+      new(config: config)
+    end
+
     def initialize(config:)
       @config = config
     end

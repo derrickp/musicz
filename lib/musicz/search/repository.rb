@@ -6,7 +6,7 @@ require "musicz/entities/error"
 module Musicz
   module Search
     class Repository
-      def initialize(request:)
+      def initialize(request: default_request)
         @request = request
       end
 
@@ -17,6 +17,10 @@ module Musicz
       private
 
       attr_reader :request
+
+      def default_request
+        Musicz::Request.build
+      end
 
       def by_id_with_entity(id_options, endpoint, entity_class)
         endpoint = "#{endpoint}/#{id_options.id}"
