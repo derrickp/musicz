@@ -28,13 +28,12 @@ But basic usage
 ```ruby
 require 'musicz'
 
-Musicz::Configuration.configure do |config|
-  config.app_name = 'YOUR_APP_NAME'
-  config.contact = 'YOUR_CONTACT_INFO'
+Musicz.configure do |config|
+  config.app_name = 'APP_NAME'
+  config.contact = 'CONTACT_INFO'
 end
 
-request = Musicz::Request.new(config: Musicz::Configuration.config)
-artist_repo = Musicz::Search::ArtistRepository(request: request)
+artist_repo = Musicz::Search::ArtistRepository.new
 
 # Search by ID
 id_options = Musicz::Search::Options::IdSearch.new(id: 'ID')
@@ -42,7 +41,17 @@ artist = artist_repo.by_id(id_options)
 
 # Search by term
 term = 'SOME_BAND_NAME'
-artist_list = artist.by_term(term)
+artist_list = artist_repo.by_term(term)
+```
+
+Want to find an artist by term and then get some related information?
+
+```ruby
+artist_repo = Musicz::Search::ArtistRepository.new
+artist_list = artist_repo.by_term('A_BAND_NAME')
+artist = artist_list.artists.first # Or get the one with the highest score
+id_options = Musicz::Search::Options::IdSearch.new(id: artist.id, relationships: ['releases'])
+full_artist = artist_repo.by_id(id_options)
 ```
 
 ## Development
@@ -61,4 +70,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Musicz project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/musicz/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Musicz project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/derrickp/musicz/blob/master/CODE_OF_CONDUCT.md).
