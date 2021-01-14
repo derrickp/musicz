@@ -3,6 +3,7 @@
 module Musicz
   class Configuration
     class NoConfigBlockGiven < RuntimeError; end
+
     class InvalidConfiguration < RuntimeError; end
 
     DEFAULT_BASE_URI = "https://musicbrainz.org/ws/2"
