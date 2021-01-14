@@ -31,15 +31,15 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "dry-struct"
-  spec.add_dependency "dry-types"
-  spec.add_dependency "typhoeus"
+  spec.add_dependency "dry-struct", "~> 1.3"
+  spec.add_dependency "dry-types", "~> 1.4"
+  spec.add_dependency "typhoeus", "~> 1.4"
 
   spec.add_development_dependency "bundler", "~> 2.0"
-  spec.add_development_dependency "pry"
-  spec.add_development_dependency "rake", ">= 12.3.3"
+  spec.add_development_dependency "pry", "~> 0.13.1"
+  spec.add_development_dependency "rake", "~> 12.3"
   spec.add_development_dependency "rspec", "~> 3.10"
-  spec.add_development_dependency "simplecov"
-  spec.add_development_dependency "standard"
-  spec.add_development_dependency "vcr"
+  spec.add_development_dependency "simplecov", "~> 0.21"
+  spec.add_development_dependency "standard", "~> 0.11"
+  spec.add_development_dependency "vcr", "~> 6.0"
 end
