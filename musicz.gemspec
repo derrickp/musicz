@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email = ["derrickplotsky@gmail.com"]
 
   spec.summary = "Basic wrapper around musicbrainz"
-  spec.description = "A very basic wrapper around the nusicbrainz API"
+  spec.description = "A very basic wrapper around the musicbrainz API"
   spec.homepage = "https://github.com/derrickp/musicz"
   spec.license = "MIT"
 
